@@ -1,0 +1,557 @@
+/* reset.css */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*flaticon.css*/
+
+/*
+  Flaticon icon font: Flaticon
+  Creation date: 22/06/2016 15:29
+  */
+
+@font-face {
+    font-family: "Flaticon";
+    src: url("fonts/Flaticon.eot");
+    src: url("fonts/Flaticon.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Flaticon.woff") format("woff"),
+    url("fonts/Flaticon.ttf") format("truetype"),
+    url("fonts/Flaticon.svg#Flaticon") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family: "Flaticon";
+        src: url("fonts/Flaticon.svg#Flaticon") format("svg");
+    }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+    font-family: Flaticon;
+    font-size: 20px;
+    font-style: normal;
+    margin-left: 20px;
+}
+
+.flaticon-alien-head:before { content: "\f100"; }
+.flaticon-assistant:before { content: "\f101"; }
+.flaticon-atom:before { content: "\f102"; }
+.flaticon-atom-1:before { content: "\f103"; }
+.flaticon-board:before { content: "\f104"; }
+.flaticon-brain:before { content: "\f105"; }
+.flaticon-bulb-on-fire:before { content: "\f106"; }
+.flaticon-calculator:before { content: "\f107"; }
+.flaticon-cardiogram:before { content: "\f108"; }
+.flaticon-compass:before { content: "\f109"; }
+.flaticon-dividers:before { content: "\f10a"; }
+.flaticon-dna:before { content: "\f10b"; }
+.flaticon-dna-1:before { content: "\f10c"; }
+.flaticon-earth-globe:before { content: "\f10d"; }
+.flaticon-electron:before { content: "\f10e"; }
+.flaticon-flask:before { content: "\f10f"; }
+.flaticon-gears:before { content: "\f110"; }
+.flaticon-germs:before { content: "\f111"; }
+.flaticon-glasses:before { content: "\f112"; }
+.flaticon-gloves:before { content: "\f113"; }
+.flaticon-light-bulb:before { content: "\f114"; }
+.flaticon-loupe:before { content: "\f115"; }
+.flaticon-magnet:before { content: "\f116"; }
+.flaticon-measurer:before { content: "\f117"; }
+.flaticon-microscope:before { content: "\f118"; }
+.flaticon-molecule:before { content: "\f119"; }
+.flaticon-molecule-1:before { content: "\f11a"; }
+.flaticon-molecule-2:before { content: "\f11b"; }
+.flaticon-monitor-with-stats:before { content: "\f11c"; }
+.flaticon-monkey:before { content: "\f11d"; }
+.flaticon-newton-cradle:before { content: "\f11e"; }
+.flaticon-observatory:before { content: "\f11f"; }
+.flaticon-pipette:before { content: "\f120"; }
+.flaticon-pulse:before { content: "\f121"; }
+.flaticon-radar:before { content: "\f122"; }
+.flaticon-radiation:before { content: "\f123"; }
+.flaticon-rat:before { content: "\f124"; }
+.flaticon-report:before { content: "\f125"; }
+.flaticon-satellite:before { content: "\f126"; }
+.flaticon-saturn:before { content: "\f127"; }
+.flaticon-science-book:before { content: "\f128"; }
+.flaticon-scientist:before { content: "\f129"; }
+.flaticon-scientist-1:before { content: "\f12a"; }
+.flaticon-scientist-woman:before { content: "\f12b"; }
+.flaticon-syringe:before { content: "\f12c"; }
+.flaticon-telescope:before { content: "\f12d"; }
+.flaticon-thermometer:before { content: "\f12e"; }
+.flaticon-three-test-tubes:before { content: "\f12f"; }
+.flaticon-virus:before { content: "\f130"; }
+.flaticon-water:before { content: "\f131"; }
+
+
+/* main.css */
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    margin-top: 0 !important;
+}
+
+header > div {
+    display: inline-block;
+}
+
+header .logo img {
+    height: 3vh;
+    padding-left: 25px;
+}
+
+header {
+    width: 100%;
+    background-color: #222;
+    height: 10vh;
+    line-height: 80px;
+}
+
+header .head-nav {
+    position: relative;
+    right: 10px;
+    float: right;
+    padding: 0 10px 0 0;
+    margin-right: 20px;
+    line-height: 10vh;
+}
+
+header .head-nav li {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+header .head-nav li a:hover, header .head-nav li a.active {
+    color: #FFF;
+}
+
+header .head-nav li a {
+    text-decoration: none;
+    color: #BBB;
+    padding: 0 10px;
+}
+
+
+
+.first-carousel {
+    width: 100%;
+    background: #BBB;
+    margin: 10vh auto 0;
+    font-family: 'raleway';
+}
+
+.first-carousel .slick-slide {
+    height: 90vh;
+    background-size: cover;
+}
+
+.first-carousel .slick-next {
+    right: 10px;
+}
+
+.first-carousel .slick-prev {
+    left: 10px;
+    z-index: 10;
+}
+
+
+.first-carousel .slide-1 {
+    background-image: url("../assets/slide-1.jpg");
+}
+
+.first-carousel .slide-1 p {
+    font-size: 50px;
+    margin: 70px 0 0 70px;
+    color: #000;
+    top: 50px;
+    background-position: center center;
+}
+
+
+.first-carousel .slide-2 p {
+    font-size: 50px;
+    margin: 70px 0 0 70px;
+    color: #000;
+    top: 50px;
+    background-position: center center;
+}
+
+
+.first-carousel .slide-3 p {
+    font-size: 50px;
+    margin: 70px 0 0 70px;
+    color: #FFF;
+    top: 50px;
+    background-position: center center;
+}
+
+.first-carousel .slide-2 {
+    background-image: url("../assets/slide-2.jpg");
+}
+
+.first-carousel .slide-3 {
+    background-image: url("../assets/slide-3.jpg");
+}
+
+.courses {
+    max-width: 1024px;
+    margin: 40px auto 0;
+}
+
+.courses .course-caption {
+    font-size: 50px;
+    font-family: "raleway";
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.courses .course-text {
+    font-weight: lighter;
+    line-height: 20px;
+    margin: 20px 0;
+}
+
+.courses .course-info {
+    box-sizing: border-box;
+    width: 48%;
+    margin: 0 18px 20px 0;
+    display: inline-block;
+    background-color: #EEE;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+}
+
+.course-info .course-title > p {
+    display: inline-block;
+    font-size: 25px;
+    padding: 0 20px;
+    line-height: 45px;
+    display: block;
+    border-radius: 10px 10px 0 0;
+    background-color: #DDD;
+    font-weight: lighter;
+}
+
+.course-info .course-description {
+    padding: 10px 20px;
+}
+
+.course-info .course-description > ul {
+    list-style: disc inside none;
+    line-height: 30px;
+    font-weight: lighter;
+}
+
+.course-info .course-title::before {
+    margin: 0 10px 0 0;
+    font-size: 25px;
+}
+
+.cta-button {
+    display: block;
+    text-align: center;
+    margin: 15px 0 30px;
+}
+
+.cta-button:hover a {
+    color: #000;
+    background-color: #FFF;
+    border: 1px solid #000;
+}
+
+.cta-button a {
+    border: 1px solid #000;
+    background: #000;
+    color: #FFF;
+    padding: 10px 20px;
+    margin: 15px 0 0;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.our-trainers {
+    .trainer-box {
+        text-align: center;
+        padding-bottom: 30px;
+        .trainer {
+            position: relative;
+            background: #DDD;
+            cursor: pointer;
+            .info {
+                padding: 20px;
+                background-color: rgba(0,0,0,0.8);
+                text-align: left;
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                color: #fff;
+                font-size: 18px;
+                font-style: italic;
+                opacity: 0;
+                transition: opacity 0.2s ease-in;
+            }
+
+            &:hover {
+                .info {
+                    opacity: 1;
+                }
+            }
+            & > img {
+                display: inline-block;
+                height: 80px;
+                width: auto;
+                border-radius: 100px;
+                margin-top: 20px;
+            }
+
+            .name {
+                font-size: 20px;
+                font-weight: lighter;
+                padding: 10px 0 5px 0;
+            }
+
+            .pos {
+                font-size: 15px;
+                font-weight: bold;
+                padding: 5px 0 30px 0;
+            }
+        }
+    }
+}
+
+.testimonials {
+    width: 80%;
+    margin: 20px auto 30px;
+}
+
+
+.testimonials .sliders img {
+    height: 100px;
+    border-radius: 100px;
+    float: left;
+}
+
+.testimonials .sliders .says {
+    float: left;
+    line-height: 100px;
+    padding: 0 30px;
+    font-style: italic;
+}
+
+.testimonials .title {
+    font-size: 30px;
+    text-align: center;
+    font-family: "raleway";
+    padding: 10px 0;
+}
+
+.companies {
+    background-color: #EEE;
+}
+
+.companies .title {
+    font-size: 30px;
+    font-family: "raleway";
+    padding: 20px 0;
+    text-align: center;
+}
+
+.company-matrix {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.company-matrix li {
+    display: inline-block;
+    width: 32%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    vertical-align: baseline;
+    vertical-align: -webkit-baseline-middle;
+}
+
+.company-matrix img {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    width: 150px;
+    height: auto;
+}
+
+.section-title {
+    font-size: 35px;
+    text-align: center;
+    padding: 20px 0;
+    font-family: "raleway";
+}
+
+
+.why-us {
+    background: #eee;
+}
+
+.why-us .section-title {
+    padding-bottom: 45px;
+}
+
+.answers {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.answers .ans {
+    display: inline-block;
+    width: 300px;
+    height: 200px;
+}
+
+.answers .ans .desc {
+    min-height: 35px;
+    padding-top: 20px;
+    display: block;
+    vertical-align: baseline;
+}
+
+.answers .ans:nth-child(2n + 1) {
+    clear: left;
+}
+
+.answers .ans:nth-child(2n) {
+    clear: right;
+}
+
+.no-border {
+    margin: 0 !important;
+}
+
+.fullWidth {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: initial;
+}
+
+#footer {
+    background-color: #000;
+    color: #CCC;
+    padding: 20px 0 40px;
+    margin-top: 20px;
+    line-height: 1.6;
+    a:hover {
+        color: #FFF;
+    }
+
+    &>div {
+        padding-top: 20px;
+    }
+
+    .newsletter {
+
+        & > div {
+            padding: 8px 0;
+        }
+
+        input {
+            background-color: #000;
+            color: #DDD;
+            border: 1px solid #555;
+            margin: 0;
+        }
+        .button {
+            color: #000;
+            background-color: #CCC;
+            margin: 0;
+
+            &:hover {
+                background-color: #FFF;
+            }
+        }
+    }
+
+    .social-media {
+
+        text-align: center;
+
+        &>div {
+            margin-top: 0;
+            padding: 8px 0;
+        }
+
+        p {
+            text-transform: uppercase;
+        }
+
+        img {
+            height: 30px;
+            width: auto;
+            padding: 0 8px;
+        }
+
+    }
+
+    .links {
+        text-align: right;
+        padding-top: 30px;
+        a {
+            color: #DDD;
+
+            &:hover {
+            color: #FFF;
+        }
+        }
+    }
+
+}
