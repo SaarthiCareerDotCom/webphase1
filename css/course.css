@@ -1,7 +1,28 @@
 .img-holder {
   width: 100%;
   height: 70vh;
-  background: url("/assets/cplus-bg.jpg");
+  background: url("/img/c++.jpg");
+  background-size: cover;
+  background-position-y: 50%;
+  padding-top: 10vh; }
+.img-holder1 {
+  width: 100%;
+  height: 70vh;
+  background: url("/img/algo.png");
+  background-size: cover;
+  background-position-y: 50%;
+  padding-top: 10vh; }
+.img-holder2 {
+  width: 100%;
+  height: 70vh;
+  background: url("/img/iot.png");
+  background-size: cover;
+  background-position-y: 50%;
+  padding-top: 10vh; }
+.img-holder3 {
+  width: 100%;
+  height: 70vh;
+  background: url("/img/c++.jpg");
   background-size: cover;
   background-position-y: 50%;
   padding-top: 10vh; }
@@ -23,15 +44,27 @@
   font-size: 20px;
   padding-top: 8px; }
 
+.extra{
+    background: #2ECC71; 
+    padding: 10px 20px;
+}
+
+.info{
+    float: left; color: #ffffff;}
+
+.info a{
+    text-decoration: none; color:#ffffff;}
+
 .programs {
   padding-bottom: 20px; }
 
 .programs .prog {
   display: inline-block;
   padding: 10px 20px;
-  background: #EEE;
+  background: #487ba0;
   margin: 0 10px;
   font-weight: lighter; }
+
 
 .programs .prog .head .name {
   font-size: 23px;
@@ -41,7 +74,8 @@
   font-size: 18px;
   font-weight: lighter;
   float: right;
-  color: #555; }
+  color: whitesmoke; }
+
 
 .programs .prog .desc {
   clear: both;
@@ -53,6 +87,29 @@
   margin: 0 auto;
   position: relative; }
 
+
+.desc{
+    background-color: #fff;
+}
+
+.cdesc{
+    border-radius: .2em;
+    border: 1px solid #cccccc;
+
+    -webkit-transition: border linear .2s, box-shadow linear .2s;
+    -moz-transition: border linear .2s, box-shadow linear .2s;
+    -o-transition: border linear .2s, box-shadow linear .2s;
+    transition: border linear .2s, box-shadow linear .2s;
+}
+.cdesc:focus
+{
+    border-color: rgba(82, 168, 236, 0.8);
+    outline: 0;
+    outline: thin dotted \9;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px     rgba(82,168,236,.6);
+    -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
+}
 .program-info {
   background: #EEE; }
 
@@ -81,7 +138,10 @@
   line-height: 50px; }
 
 .info tr:nth-child(odd) {
-  background-color: #DDD; }
+    background-color: #0a8bbb; }
+.info tr:nth-child(even) {
+    background-color: white;
+    color:#111212}
 
 .info td {
   border-bottom: 1px solid #888; }
@@ -98,45 +158,12 @@
 .info .tile-advanced {
   background-color: #222; }
 
-.student-speak {
-  padding-bottom: 30px; }
-  .student-speak .rating {
-    background: #eee;
-    padding: 20px 0;
-    text-align: center; }
-    .student-speak .rating .big {
-      font-weight: bold;
-      font-size: 25px; }
-    .student-speak .rating .stars {
-      padding: 20px 0; }
-      .student-speak .rating .stars img {
-        display: inline-block;
-        width: 25px;
-        height: auto; }
-    .student-speak .rating .by {
-      font-size: 15px;
-      color: #333;
-      font-style: italic; }
-  .student-speak .testimonials-2 {
-    color: #fff;
-    height: 148px; }
-    .student-speak .testimonials-2 .revs {
-      background: #333; }
-    .student-speak .testimonials-2 .pic {
-      background: url("/assets/person-1.jpg");
-      background-size: contain;
-      min-height: 148px;
-      background-repeat: no-repeat; }
-    .student-speak .testimonials-2 .rev {
-      font-size: 18px;
-      line-height: 25px;
-      font-style: italic;
-      padding: 10px 10px 0 0; }
+
 
 .two-tiles {
   padding-bottom: 40px; }
   .two-tiles .tile {
-    background: #444;
+    background: #507d9e;
     color: #fff;
     padding: 15px;
     min-height: 115px; }
@@ -181,23 +208,24 @@
     display: block;
     width: 200px;
     padding: 15px 0 15px 10px;
-    background: #222;
+    background:#368bff;
     color: #FFF;
     border: 1px solid #222; }
   .nav-side a.active, .nav-side a:hover {
     color: #222;
-    background-color: #FFF; }
+    background-color:#FFF ; }
 
 .accordion-item.is-active .accordion-title, .accordion-item:hover .accordion-title {
   color: #FFF;
-  background: #000; }
+  background:#189ae4; }
   .accordion-item.is-active .accordion-title:before, .accordion-item:hover .accordion-title:before {
-    font-size: 20px; }
+    font-size: 20px; 
+  }
 
 .accordion-title {
   font-size: 16px;
   color: #000;
-  background: #DDD;
+  background:whitesmoke;
   text-decoration: none; }
 
 /*# sourceMappingURL=course.css.map */

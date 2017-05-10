@@ -11,9 +11,14 @@
         <!-- Place favicon.ico in the root directory -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700|Roboto:300,400,700" rel="stylesheet">
         <link rel="stylesheet" href="">
-        <link rel="stylesheet" href="/css/foundation.min.css"/>
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/slick.css">
+        <link rel="stylesheet" href="css/foundation.min.css" type="text/css"/>
+        <link rel="stylesheet" href="css/main.css" type="text/css">
+        <link rel="stylesheet" href="css/slick.css" type="text/css">
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="js/jquery.js"></script>
+         <script src="js/bootstrap.min.js"></script>
+
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body data-sticky-container>
@@ -36,26 +41,21 @@
             </div>
         </header>
 
-        <section >
-            <div class="first-carousel">
-                <div class="slide-1">
-
-                    <p>Learn here</p>
-
-                </div>
-                <div class="slide-2">
-
-                    <p>Practice here</p>
-
-                </div>
-                <div class="slide-3">
-
-                    <p>Win here</p>
-
+          <div id="content">
+            <!--Main banner image-->
+            <div id="banner-image">
+                <div class="container">	
+                    <center>
+                        <div id="banner_content">
+                            <h1>Shape Your Future</h1>
+                            <p>Upgrade Your Skills </p>
+                            <br/>
+                            <a  href="#cour" class="btn btn-danger a">View Our Courses</a>
+                        </div>
+                    </center>
                 </div>
             </div>
-        </section>
-
+          </div>
         <section class="why-us">
             <p class="section-title">Why Saarthi</p>
             <div class="answers">
@@ -84,129 +84,79 @@
             </div>
         </section>
 
-        <section class="courses">
+        <section class="courses" id="cour">
             <p class="course-caption">Our Courses</p>
             <div>
                 <ul>
                     <li class="course-info">
                         <div>
                             <div class="course-title">
-                                <p>Data Analytics</p>
+                                <p>C++</p>
                             </div>
                             <div class="course-description">
-                                <p class="course-text">Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed </p>
-                                <ul>
-                                    <li>Lorem ipsum</li>
-                                    <li>Dolor sit amet</li>
-                                    <li>Consectetur Adipiscing Elit</li>
-                                    <li>Sed do eiusmod</li>
-                                    <li>Tempor incididunt</li>
-                                    <li>Dolore magna</li>
-                                </ul>
+                                 <img src="/img/c1.png" style="width:100%;height: 40%"/>
+                                <br>
+                                <p>hcbkabckabc</p>
                             </div>
-                            <div class="cta-button"><a href="">Register</a></div>
+                            
+                                <button class="btn btn-success button large "  style="float :left;width: 50%"><a href="" class="btext">Know More</a></button>
+                                <button class="btn btn-danger button large "  style="float:right;width: 50%"><a href="" class="btext">Start</a></button>
+                                 
+                            
                         </div>
                     </li>
                     <li class="course-info">
                         <div>
                             <div class="course-title">
-                                <p>Data Analytics</p>
+                                <p>Aptitude</p>
                             </div>
                             <div class="course-description">
-                                <p class="course-text">Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed </p>
-                                <ul>
-                                    <li>Lorem ipsum</li>
-                                    <li>Dolor sit amet</li>
-                                    <li>Consectetur Adipiscing Elit</li>
-                                    <li>Sed do eiusmod</li>
-                                    <li>Tempor incididunt</li>
-                                    <li>Dolore magna</li>
-                                </ul>
+                                
+                                 <img src="/img/a1.jpg" style="width:100%;height: 40%"/>
+                                <br>
+                                <p>hcbkabckabc</p>
+                            
                             </div>
-                            <div class="cta-button"><a href="">Register</a></div>
+                           <button class="btn btn-success button large "  style="float :left;width: 50%"><a href="" class="btext">Know More</a></button>
+                                <button class="btn btn-danger button large "  style="float:right;width: 50%"><a href="" class="btext">Start</a></button>
                         </div>
                     </li>
                     <li class="course-info">
                         <div>
                             <div class="course-title">
-                                <p>Data Analytics</p>
+                                <p>Data Structures And Algorithms</p>
                             </div>
                             <div class="course-description">
-                                <p class="course-text">Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed </p>
-                                <ul>
-                                    <li>Lorem ipsum</li>
-                                    <li>Dolor sit amet</li>
-                                    <li>Consectetur Adipiscing Elit</li>
-                                    <li>Sed do eiusmod</li>
-                                    <li>Tempor incididunt</li>
-                                    <li>Dolore magna</li>
-                                </ul>
+                                
+                                 <img src="/img/d1.png" style="width:100%;height: 40%"/>
+                                <br>
+                                <p>hcbkabckabc</p>
+                            
                             </div>
-                            <div class="cta-button"><a href="">Register</a></div>
+                           <button class="btn btn-success button large "  style="float :left;width: 50%"><a href="" class="btext">Know More</a></button>
+                                <button class="btn btn-danger button large "  style="float:right;width: 50%"><a href="" class="btext">Start</a></button>
                         </div>
                     </li>
                     <li class="course-info">
                         <div>
                             <div class="course-title">
-                                <p>Data Analytics</p>
+                                <p>Internet Of Things</p>
                             </div>
                             <div class="course-description">
-                                <p class="course-text">Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed </p>
-                                <ul>
-                                    <li>Lorem ipsum</li>
-                                    <li>Dolor sit amet</li>
-                                    <li>Consectetur Adipiscing Elit</li>
-                                    <li>Sed do eiusmod</li>
-                                    <li>Tempor incididunt</li>
-                                    <li>Dolore magna</li>
-                                </ul>
+                                <img src="/img/iot1.png" style="width:100%;height: 40%"/>
+                                <br>
+                                <p>hcbkabckabc</p>
                             </div>
-                            <div class="cta-button"><a href="">Register</a></div>
+                            <button class="btn btn-success button large "  style="float :left;width: 50%"><a href="/course/cplus/iot.html" class="btext">Know More</a></button>
+                                <button class="btn btn-danger button large "  style="float:right;width: 50%"><a href="" class="btext">Start On June 2017</a></button>
                         </div>
                     </li>
-                    <li class="course-info">
-                        <div>
-                            <div class="course-title">
-                                <p>Data Analytics</p>
-                            </div>
-                            <div class="course-description">
-                                <p class="course-text">Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed </p>
-                                <ul>
-                                    <li>Lorem ipsum</li>
-                                    <li>Dolor sit amet</li>
-                                    <li>Consectetur Adipiscing Elit</li>
-                                    <li>Sed do eiusmod</li>
-                                    <li>Tempor incididunt</li>
-                                    <li>Dolore magna</li>
-                                </ul>
-                            </div>
-                            <div class="cta-button"><a href="">Register</a></div>
-                        </div>
-                    </li>
-                    <li class="course-info">
-                        <div>
-                            <div class="course-title">
-                                <p>Data Analytics</p>
-                            </div>
-                            <div class="course-description">
-                                <p class="course-text">Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed </p>
-                                <ul>
-                                    <li>Lorem ipsum</li>
-                                    <li>Dolor sit amet</li>
-                                    <li>Consectetur Adipiscing Elit</li>
-                                    <li>Sed do eiusmod</li>
-                                    <li>Tempor incididunt</li>
-                                    <li>Dolore magna</li>
-                                </ul>
-                            </div>
-                            <div class="cta-button"><a href="">Register</a></div>
-                        </div>
-                    </li>
+                    
                 </ul>
             </div>
         </section>
 
-        <section class="our-trainers">
+         <section class="our-trainers">
 
             <p class="section-title">Our Trainers</p>
 
@@ -235,49 +185,56 @@
                         <p class="pos">CTO, MakeMeTrip</p>
                     </div>
                 </div>
+                <div class="column">
+                    <div class="trainer">
+                        <div class="info">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </div>
+                        <img src="/assets/person-1.jpg" alt=""/>
+                        <p class="name">Mohan McDas</p>
+                        <p class="pos">CTO, MakeMeTrip</p>
+                    </div>
+                </div>
             </div>
 
         </section>
 
 
+<section id="footer" class="row fullWidth">
 
-        <section class="testimonials">
+    <div class="large-3 large-offset-1 column newsletter">
 
-            <p class="title">Students Speak</p>
+        <div class="row">Subscribe to our newsletter</div>
+        <div class="row"><input type="email" placeholder="you@email.com"/></div>
+        <div class="row">
+            <a href="" class="button">Subscribe</a>
+        </div>
 
-            <div class="sliders">
-                
-                <div class="person person-1">
-                    <img src="img/person.jpg" alt="">
-                    <p class="says">Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                </div>
-                <div class="person person-2">
-                    <img src="img/person.jpg" alt="">
-                    <p class="says">Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                </div>
-                <div class="person person-3">
-                    <img src="img/person.jpg" alt="">
-                    <p class="says">Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                </div>
-                
-                
-            </div>
+    </div>
 
-        </section>
+
+    <div class="large-2 large-offset-1 column social-media">
+        <div class="row">
+            Contact Us
+        </div>
+        <span class="facebook"><a href="#"><img src="/assets/icons/Facebook.png" alt=""/></a></span>
+        <span class="instagram"><a href="#"><img src="/assets/icons/Instagram.png" alt=""/></a></span>
+        <span class="twitter"><a href="#"><img src="/assets/icons/Twitter.png" alt=""/></a></span>
+    </div>
+
+    <div class="large-2 end large-offset-2 column links">
+        <ul>
+            <li><a href="/index.html">HOME</a></li>
+            <li><a href="/index.html/#courses">COURSES</a></li>
+            
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </div>
+
+</section>
+
+       
         
-        <section class="companies">
-            <p class="title">Placements at</p>
-            <div class="company-matrix">
-                <ul>
-                    <li><img src="img/car_logo_PNG1648.png" alt=""></li>
-                    <li><img src="img/car_logo_PNG1667.png" alt=""></li>
-                    <li><img src="img/citrus-logo-2D.png" alt=""></li>
-                    <li><img src="img/Hd-Logos.png" alt=""></li>
-                    <li><img src="img/HP_logo_630x630.png" alt=""></li>
-                    <li><img src="img/yck4gkbKi.png" alt=""></li>
-                </ul>
-            </div>
-        </section>
+      
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <!--<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.1.0.min.js"><\/script>')</script>-->

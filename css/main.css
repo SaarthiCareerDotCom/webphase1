@@ -234,7 +234,7 @@ header .logo img {
 
 header {
   width: 100%;
-  background-color: #222;
+  background-color:  #053b63;
   height: 10vh;
   line-height: 80px; }
 
@@ -251,60 +251,63 @@ header .head-nav li {
   margin-right: 25px; }
 
 header .head-nav li a:hover, header .head-nav li a.active {
-  color: #FFF; }
+  color: #FFF;
+  background: #ed0b19;}
 
 header .head-nav li a {
   text-decoration: none;
   color: #BBB;
   padding: 0 10px; }
+ #content{
+    min-height: 100%;
+}
 
-.first-carousel {
-  width: 100%;
-  background: #BBB;
-  margin: 10vh auto 0;
-  font-family: 'raleway'; }
+#banner-image {
+    padding-bottom: 50px;
+    text-align: center;
+    color: #f8f8f8;
+    background:url("/assets/career2.jpg") no-repeat center center;
+    background-size: cover;
+    background-attachment: scroll;
+}
 
-.first-carousel .slick-slide {
-  height: 90vh;
-  background-size: cover; }
+#banner_content {
+    position: relative;
+    padding-top: 6%;
+    padding-bottom: 6%;
+    margin-top: 12%;
+    margin-bottom: 12%;
+    background-color: rgba(0, 0, 0, 0.3);
+    max-width: 660px;
+}   
 
-.first-carousel .slick-next {
-  right: 10px; }
+.a{
+    
+  transition: transform 1s ease-in-out;
+}
 
-.first-carousel .slick-prev {
-  left: 10px;
-  z-index: 10; }
+.a:hover
+{
+  transform: scale(1.5);
+}
 
-.first-carousel .slide-1 {
-  background-image: url("../assets/slide-1.jpg"); }
+.btext{
+    text-decoration: none;
+    color:whitesmoke;
+}
+.btn-success{
+    
+    background-color: whitesmoke;
+    }
 
-.first-carousel .slide-1 p {
-  font-size: 50px;
-  margin: 70px 0 0 70px;
-  color: #000;
-  top: 50px;
-  background-position: center center; }
-
-.first-carousel .slide-2 p {
-  font-size: 50px;
-  margin: 70px 0 0 70px;
-  color: #000;
-  top: 50px;
-  background-position: center center; }
-
-.first-carousel .slide-3 p {
-  font-size: 50px;
-  margin: 70px 0 0 70px;
-  color: #FFF;
-  top: 50px;
-  background-position: center center; }
-
-.first-carousel .slide-2 {
-  background-image: url("../assets/slide-2.jpg"); }
-
-.first-carousel .slide-3 {
-  background-image: url("../assets/slide-3.jpg"); }
-
+.btn-success a:hover{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.btn-danger a:hover{
+    text-decoration: none;
+    color: whitesmoke;
+}
 .courses {
   max-width: 1024px;
   margin: 40px auto 0; }
@@ -336,11 +339,33 @@ header .head-nav li a {
   line-height: 45px;
   display: block;
   border-radius: 10px 10px 0 0;
-  background-color: #DDD;
-  font-weight: lighter; }
+  background-color:#0d99df;
+  font-weight: lighter; 
+  color: #fcfcfc}
 
 .course-info .course-description {
-  padding: 10px 20px; }
+  padding: 10px 20px;background-color:white;
+  
+}
+.course-description{
+    border-radius: .2em;
+    border: 1px solid #cccccc;
+
+    -webkit-transition: border linear .2s, box-shadow linear .2s;
+    -moz-transition: border linear .2s, box-shadow linear .2s;
+    -o-transition: border linear .2s, box-shadow linear .2s;
+    transition: border linear .2s, box-shadow linear .2s;
+}
+.course-description:focus
+{
+    border-color: rgba(82, 168, 236, 0.8);
+    outline: 0;
+    outline: thin dotted \9;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px     rgba(82,168,236,.6);
+    -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
+}
+
 
 .course-info .course-description > ul {
   list-style: disc inside none;
@@ -351,31 +376,15 @@ header .head-nav li a {
   margin: 0 10px 0 0;
   font-size: 25px; }
 
-.cta-button {
-  display: block;
-  text-align: center;
-  margin: 15px 0 30px; }
 
-.cta-button:hover a {
-  color: #000;
-  background-color: #FFF;
-  border: 1px solid #000; }
 
-.cta-button a {
-  border: 1px solid #000;
-  background: #000;
-  color: #FFF;
-  padding: 10px 20px;
-  margin: 15px 0 0;
-  border-radius: 5px;
-  text-decoration: none; }
 
 .our-trainers .trainer-box {
   text-align: center;
   padding-bottom: 30px; }
   .our-trainers .trainer-box .trainer {
     position: relative;
-    background: #DDD;
+    background: #f4f4ef;
     cursor: pointer; }
     .our-trainers .trainer-box .trainer .info {
       padding: 20px;
@@ -498,7 +507,7 @@ header .head-nav li a {
   max-width: initial; }
 
 #footer {
-  background-color: #000;
+  background-color: #053b63;
   color: #CCC;
   padding: 20px 0 40px;
   margin-top: 20px;
@@ -539,4 +548,6 @@ header .head-nav li a {
       #footer .links a:hover {
         color: #FFF; }
 
+      
+  
 /*# sourceMappingURL=main.css.map */

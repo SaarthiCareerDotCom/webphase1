@@ -186,66 +186,33 @@ header .head-nav li a {
 
 
 
-.first-carousel {
-    width: 100%;
-    background: #BBB;
-    margin: 10vh auto 0;
-    font-family: 'raleway';
-}
-
-.first-carousel .slick-slide {
-    height: 90vh;
+#banner-image {
+    padding-bottom: 50px;
+    text-align: center;
+    color: #f8f8f8;
+    background:url("assets/career1.jpg") no-repeat center center;
     background-size: cover;
 }
 
-.first-carousel .slick-next {
-    right: 10px;
+#banner_content {
+    position: relative;
+    padding-top: 6%;
+    padding-bottom: 6%;
+    margin-top: 12%;
+    margin-bottom: 12%;
+    background-color: rgba(0, 0, 0, 0.5);
+    max-width: 660px;
+}   
+
+.btn{
+    
+  transition: transform 1s;
 }
 
-.first-carousel .slick-prev {
-    left: 10px;
-    z-index: 10;
+.btn:hover
+{
+  transform: scale(1.1);
 }
-
-
-.first-carousel .slide-1 {
-    background-image: url("../assets/slide-1.jpg");
-}
-
-.first-carousel .slide-1 p {
-    font-size: 50px;
-    margin: 70px 0 0 70px;
-    color: #000;
-    top: 50px;
-    background-position: center center;
-}
-
-
-.first-carousel .slide-2 p {
-    font-size: 50px;
-    margin: 70px 0 0 70px;
-    color: #000;
-    top: 50px;
-    background-position: center center;
-}
-
-
-.first-carousel .slide-3 p {
-    font-size: 50px;
-    margin: 70px 0 0 70px;
-    color: #FFF;
-    top: 50px;
-    background-position: center center;
-}
-
-.first-carousel .slide-2 {
-    background-image: url("../assets/slide-2.jpg");
-}
-
-.first-carousel .slide-3 {
-    background-image: url("../assets/slide-3.jpg");
-}
-
 .courses {
     max-width: 1024px;
     margin: 40px auto 0;
