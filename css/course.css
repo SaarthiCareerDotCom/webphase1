@@ -223,7 +223,7 @@
 .section-title {
   font-family: "raleway";
   font-size: 30px;
-  padding-bottom: 50px;
+  padding: 0 0 20px;
   font-weight: bold; }
 
 .desc-text {
@@ -235,6 +235,17 @@
     text-align: left; }
   .type1 .company-icons img {
     max-width: 120px; }
+
+.highlights .icons .column-block {
+  border-radius: 4px; }
+  .highlights .icons .column-block > .row {
+    margin: 10px;
+    border: 2px solid black;
+    padding: 10px 0;
+    border-radius: 4px; }
+
+.highlights .icons .icon-desc {
+  margin-top: 10px; }
 
 .type1.dark {
   color: #FFF;
