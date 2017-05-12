@@ -18,7 +18,5 @@ $(document).ready(function () {
 		autoplaySpeed: 4000
 	});
 
-	var magellan = new Foundation.Magellan($('.header-magellan').eq(0),{
-		'deepLinking' : true
-	});
+	//var magellan = new Foundation.Magellan($('.header-magellan').eq(0),{});
 });

@@ -1,10 +1,11 @@
 .img-holder {
   width: 100%;
-  height: 70vh;
+  height: 50vh;
   background: url("/assets/cplus-bg.jpg");
   background-size: cover;
   background-position-y: 50%;
-  padding-top: 10vh; }
+  padding-top: 10vh;
+  position: relative; }
 
 .hero-text {
   width: 100%;
@@ -12,9 +13,21 @@
   padding: 20px 0;
   font-family: "raleway";
   background: rgba(0, 0, 0, 0.5);
-  top: 45%;
+  bottom: 0;
   color: #FFF;
-  position: relative; }
+  position: absolute; }
+  .hero-text .facts {
+    margin: 10px 0; }
+    .hero-text .facts li {
+      display: inline-block; }
+      .hero-text .facts li sup {
+        font-size: 10px; }
+      .hero-text .facts li:not(:last-child):after {
+        content: '|';
+        padding-left: 5px; }
+  .hero-text .rating .star img {
+    height: 20px;
+    width: auto; }
 
 .hero-text .title {
   font-size: 40px; }
@@ -200,4 +213,9 @@
   background: #DDD;
   text-decoration: none; }
 
-/*# sourceMappingURL=course.css.map */
+.description .text {
+  font-size: 20px;
+  font-weight: 100;
+  margin-top: 30px;
+  line-height: 1.5;
+  text-align: center; }
