@@ -464,19 +464,27 @@ header .head-nav li a {
 
 .section-title {
   font-size: 35px;
-  text-align: center;
   padding: 20px 0;
-  font-family: "raleway"; }
+  font-family: "raleway";
+  font-weight: bold;
+  text-align: left;
+  color: #25274D; }
 
 .why-us {
-  background: #eee; }
+  background: #AAABB8;
+  padding-top: 30px; }
+  .why-us .text {
+    line-height: 1.4;
+    max-width: 70%; }
 
 .why-us .section-title {
   padding-bottom: 45px; }
 
 .answers {
   margin: 0 auto;
-  text-align: center; }
+  text-align: left;
+  font-weight: bold;
+  color: #FFF; }
 
 .answers .ans {
   display: inline-block;
