@@ -306,14 +306,11 @@ header .head-nav li a {
 .courses {
   margin-top: 20px; }
 
-.courses .course-caption {
-  font-size: 50px;
-  font-family: "raleway";
-  text-align: center;
-  margin-bottom: 30px; }
+.courses .section-title {
+  margin-bottom: 20px; }
 
 .course-know {
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #25274D;
   overflow: hidden; }
   .course-know .action {
     cursor: pointer;
@@ -322,8 +319,13 @@ header .head-nav li a {
     bottom: 0;
     padding: 4px 20px 10px;
     margin-bottom: 10px;
-    border: 2px solid black;
+    border: 2px solid #25274D;
+    color: #25274D;
     float: right; }
+  .course-know .action:hover {
+    border-color: #2E9CCA;
+    background: #2E9CCA;
+    color: #FFF; }
   .course-know img {
     height: 20px;
     position: relative;
@@ -343,7 +345,8 @@ header .head-nav li a {
   padding: 0 20px;
   line-height: 45px;
   display: block;
-  background-color: #DDD;
+  background-color: #25274D;
+  color: #2E9CCA;
   font-weight: lighter; }
 
 .course-info .course-description {
@@ -377,54 +380,55 @@ header .head-nav li a {
   border-radius: 5px;
   text-decoration: none; }
 
-.our-trainers .trainer-box {
-  text-align: center;
-  padding-bottom: 30px; }
-  .our-trainers .trainer-box .trainer {
-    position: relative;
-    background: #DDD;
-    cursor: pointer; }
-    .our-trainers .trainer-box .trainer .info {
-      padding: 20px;
-      background-color: rgba(0, 0, 0, 0.8);
-      text-align: left;
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      color: #fff;
-      font-size: 18px;
-      font-style: italic;
-      opacity: 0;
-      transition: opacity 0.2s ease-in; }
-    .our-trainers .trainer-box .trainer:hover .info {
-      opacity: 1; }
-    .our-trainers .trainer-box .trainer > img {
-      display: inline-block;
-      height: 80px;
-      width: auto;
-      border-radius: 100px;
-      margin-top: 20px; }
-    .our-trainers .trainer-box .trainer .name {
-      font-size: 20px;
-      font-weight: lighter;
-      padding: 10px 0 5px 0; }
-    .our-trainers .trainer-box .trainer .pos {
-      font-size: 15px;
-      font-weight: bold;
-      padding: 5px 0 30px 0; }
+.our-trainers {
+  background-color: #AAABB8; }
+  .our-trainers .trainer-box {
+    text-align: center;
+    padding-bottom: 30px; }
+    .our-trainers .trainer-box .trainer {
+      position: relative;
+      background: #25274D;
+      cursor: pointer;
+      color: #2E9CCA; }
+      .our-trainers .trainer-box .trainer .info {
+        padding: 20px;
+        background-color: rgba(37, 29, 99, 0.8);
+        text-align: left;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        font-size: 18px;
+        font-style: italic;
+        opacity: 0;
+        transition: opacity 0.2s ease-in; }
+      .our-trainers .trainer-box .trainer:hover .info {
+        opacity: 1; }
+      .our-trainers .trainer-box .trainer > img {
+        display: inline-block;
+        height: 80px;
+        width: auto;
+        border-radius: 100px;
+        margin-top: 20px; }
+      .our-trainers .trainer-box .trainer .name {
+        font-size: 20px;
+        font-weight: lighter;
+        padding: 10px 0 5px 0; }
+      .our-trainers .trainer-box .trainer .pos {
+        font-size: 15px;
+        font-weight: bold;
+        padding: 5px 0 30px 0; }
 
 .testimonials {
-  width: 80%;
   margin: 20px auto 30px; }
 
 .testimonials .sliders img {
   height: 100px;
   border-radius: 100px;
-  float: left; }
+  float: right; }
 
 .testimonials .sliders .says {
   float: left;
-  line-height: 100px;
+  line-height: 1.4;
   padding: 0 30px;
   font-style: italic; }
 

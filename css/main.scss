@@ -284,15 +284,12 @@ header .head-nav li a {
         margin-top: 20px;
     }
 
-    .courses .course-caption {
-        font-size: 50px;
-        font-family: "raleway";
-        text-align: center;
-        margin-bottom: 30px;
+    .courses .section-title {
+        margin-bottom: 20px;
     }
 
     .course-know {
-        border-bottom: 2px solid black;
+        border-bottom: 2px solid $darker-bg;
         overflow: hidden;
         .action {
             cursor: pointer;
@@ -301,8 +298,14 @@ header .head-nav li a {
             bottom: 0;
             padding: 4px 20px 10px;
             margin-bottom: 10px;
-            border: 2px solid black;
+            border: 2px solid $darker-bg;
+            color: $darker-bg;
             float: right;
+        }
+        .action:hover {
+            border-color: $bright;
+            background: $bright;
+            color: #FFF;
         }
         img {
             height: 20px;
@@ -337,7 +340,8 @@ header .head-nav li a {
         padding: 0 20px;
         line-height: 45px;
         display: block;
-        background-color: #DDD;
+        background-color: $darker-bg;
+        color: $bright;
         font-weight: lighter;
     }
 
@@ -379,21 +383,22 @@ header .head-nav li a {
     }
 
     .our-trainers {
+        background-color: $med-bg;
         .trainer-box {
             text-align: center;
             padding-bottom: 30px;
             .trainer {
                 position: relative;
-                background: #DDD;
+                background: $darker-bg;
                 cursor: pointer;
+                color: $bright;
                 .info {
                     padding: 20px;
-                    background-color: rgba(0,0,0,0.8);
+                    background-color: rgba(37,29,99,0.8);
                     text-align: left;
                     position: absolute;
                     height: 100%;
                     width: 100%;
-                    color: #fff;
                     font-size: 18px;
                     font-style: italic;
                     opacity: 0;
@@ -429,7 +434,6 @@ header .head-nav li a {
     }
 
     .testimonials {
-        width: 80%;
         margin: 20px auto 30px;
     }
 
@@ -437,12 +441,12 @@ header .head-nav li a {
     .testimonials .sliders img {
         height: 100px;
         border-radius: 100px;
-        float: left;
+        float: right;
     }
 
     .testimonials .sliders .says {
         float: left;
-        line-height: 100px;
+        line-height: 1.4;
         padding: 0 30px;
         font-style: italic;
     }
