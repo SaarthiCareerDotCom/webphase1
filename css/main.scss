@@ -208,350 +208,371 @@ header .head-nav li a {
 }
 
 
-.first-carousel .slide-1 {
-    background-image: url("../assets/slide-1.jpg");
-}
-
-.first-carousel .slide-1 p {
-    font-size: 50px;
-    margin: 70px 0 0 70px;
-    color: #000;
-    top: 50px;
-    background-position: center center;
-}
-
-
-.first-carousel .slide-2 p {
-    font-size: 50px;
-    margin: 70px 0 0 70px;
-    color: #000;
-    top: 50px;
-    background-position: center center;
-}
-
-
-.first-carousel .slide-3 p {
-    font-size: 50px;
-    margin: 70px 0 0 70px;
-    color: #FFF;
-    top: 50px;
-    background-position: center center;
-}
-
-.first-carousel .slide-2 {
-    background-image: url("../assets/slide-2.jpg");
-}
-
-.first-carousel .slide-3 {
-    background-image: url("../assets/slide-3.jpg");
-}
-
-.courses {
-    max-width: 1024px;
-    margin: 40px auto 0;
-}
-
-.courses .course-caption {
-    font-size: 50px;
-    font-family: "raleway";
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.courses .course-text {
-    font-weight: lighter;
-    line-height: 20px;
-    margin: 20px 0;
-}
-
-.courses .course-info {
-    box-sizing: border-box;
-    width: 48%;
-    margin: 0 18px 20px 0;
-    display: inline-block;
-    background-color: #EEE;
-    border-radius: 10px 10px 0 0;
-    position: relative;
-}
-
-.course-info .course-title > p {
-    display: inline-block;
-    font-size: 25px;
-    padding: 0 20px;
-    line-height: 45px;
-    display: block;
-    border-radius: 10px 10px 0 0;
-    background-color: #DDD;
-    font-weight: lighter;
-}
-
-.course-info .course-description {
-    padding: 10px 20px;
-}
-
-.course-info .course-description > ul {
-    list-style: disc inside none;
-    line-height: 30px;
-    font-weight: lighter;
-}
-
-.course-info .course-title::before {
-    margin: 0 10px 0 0;
-    font-size: 25px;
-}
-
-.cta-button {
-    display: block;
-    text-align: center;
-    margin: 15px 0 30px;
-}
-
-.cta-button:hover a {
-    color: #000;
-    background-color: #FFF;
-    border: 1px solid #000;
-}
-
-.cta-button a {
-    border: 1px solid #000;
-    background: #000;
-    color: #FFF;
-    padding: 10px 20px;
-    margin: 15px 0 0;
-    border-radius: 5px;
-    text-decoration: none;
-}
-
-.our-trainers {
-    .trainer-box {
+.first-carousel {
+    .slide-1 {
+        background-image: url("../assets/slide-1.jpg");
+    }
+    .quote {
+        font-family: "raleway";
+        width: 500px;
+        margin: 50px auto;
         text-align: center;
-        padding-bottom: 30px;
-        .trainer {
-            position: relative;
-            background: #DDD;
-            cursor: pointer;
-            .info {
-                padding: 20px;
-                background-color: rgba(0,0,0,0.8);
-                text-align: left;
-                position: absolute;
-                height: 100%;
-                width: 100%;
-                color: #fff;
-                font-size: 18px;
-                font-style: italic;
-                opacity: 0;
-                transition: opacity 0.2s ease-in;
-            }
+        padding: 15px;
+        background-color: rgba(0,0,0,0.3);
+        border-radius: 5px;
+        h1 {
+            font-size: 30px;
+            font-weight: bold;
+        }
+        p {
+            margin-top: 7px;
+        }
+    }
+}
 
-            &:hover {
+
+
+    //.first-carousel .slide-1 p {
+    //    font-size: 50px;
+    //    margin: 70px 0 0 70px;
+    //    color: #000;
+    //    top: 50px;
+    //    background-position: center center;
+    //}
+    //
+    //
+    //.first-carousel .slide-2 p {
+    //    font-size: 50px;
+    //    margin: 70px 0 0 70px;
+    //    color: #000;
+    //    top: 50px;
+    //    background-position: center center;
+    //}
+    //
+    //
+    //.first-carousel .slide-3 p {
+    //    font-size: 50px;
+    //    margin: 70px 0 0 70px;
+    //    color: #FFF;
+    //    top: 50px;
+    //    background-position: center center;
+    //}
+
+    .first-carousel .slide-2 {
+        background-image: url("../assets/slide-2.jpg");
+    }
+
+    .first-carousel .slide-3 {
+        background-image: url("../assets/slide-3.jpg");
+    }
+
+    //.courses {
+    //    max-width: 1024px;
+    //    margin: 40px auto 0;
+    //}
+
+    .courses .course-caption {
+        font-size: 50px;
+        font-family: "raleway";
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .courses .course-text {
+        font-weight: lighter;
+        line-height: 20px;
+        margin: 20px 0;
+    }
+    //
+    //.courses .course-info {
+    //    box-sizing: border-box;
+    //    width: 48%;
+    //    margin: 0 18px 20px 0;
+    //    display: inline-block;
+    //    background-color: #EEE;
+    //    border-radius: 10px 10px 0 0;
+    //    position: relative;
+    //}
+
+    .course-info .course-title > p {
+        display: inline-block;
+        font-size: 25px;
+        padding: 0 20px;
+        line-height: 45px;
+        display: block;
+        border-radius: 10px 10px 0 0;
+        background-color: #DDD;
+        font-weight: lighter;
+    }
+
+    .course-info .course-description {
+        padding: 10px 20px;
+    }
+
+    .course-info .course-description > ul {
+        list-style: disc inside none;
+        line-height: 30px;
+        font-weight: lighter;
+    }
+
+    .course-info .course-title::before {
+        margin: 0 10px 0 0;
+        font-size: 25px;
+    }
+
+    .cta-button {
+        display: block;
+        text-align: center;
+        margin: 15px 0 30px;
+    }
+
+    .cta-button:hover a {
+        color: #000;
+        background-color: #FFF;
+        border: 1px solid #000;
+    }
+
+    .cta-button a {
+        border: 1px solid #000;
+        background: #000;
+        color: #FFF;
+        padding: 10px 20px;
+        margin: 15px 0 0;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+
+    .our-trainers {
+        .trainer-box {
+            text-align: center;
+            padding-bottom: 30px;
+            .trainer {
+                position: relative;
+                background: #DDD;
+                cursor: pointer;
                 .info {
-                    opacity: 1;
+                    padding: 20px;
+                    background-color: rgba(0,0,0,0.8);
+                    text-align: left;
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    color: #fff;
+                    font-size: 18px;
+                    font-style: italic;
+                    opacity: 0;
+                    transition: opacity 0.2s ease-in;
+                }
+
+                &:hover {
+                    .info {
+                        opacity: 1;
+                    }
+                }
+                & > img {
+                    display: inline-block;
+                    height: 80px;
+                    width: auto;
+                    border-radius: 100px;
+                    margin-top: 20px;
+                }
+
+                .name {
+                    font-size: 20px;
+                    font-weight: lighter;
+                    padding: 10px 0 5px 0;
+                }
+
+                .pos {
+                    font-size: 15px;
+                    font-weight: bold;
+                    padding: 5px 0 30px 0;
                 }
             }
-            & > img {
-                display: inline-block;
-                height: 80px;
-                width: auto;
-                border-radius: 100px;
-                margin-top: 20px;
-            }
-
-            .name {
-                font-size: 20px;
-                font-weight: lighter;
-                padding: 10px 0 5px 0;
-            }
-
-            .pos {
-                font-size: 15px;
-                font-weight: bold;
-                padding: 5px 0 30px 0;
-            }
-        }
-    }
-}
-
-.testimonials {
-    width: 80%;
-    margin: 20px auto 30px;
-}
-
-
-.testimonials .sliders img {
-    height: 100px;
-    border-radius: 100px;
-    float: left;
-}
-
-.testimonials .sliders .says {
-    float: left;
-    line-height: 100px;
-    padding: 0 30px;
-    font-style: italic;
-}
-
-.testimonials .title {
-    font-size: 30px;
-    text-align: center;
-    font-family: "raleway";
-    padding: 10px 0;
-}
-
-.companies {
-    background-color: #EEE;
-}
-
-.companies .title {
-    font-size: 30px;
-    font-family: "raleway";
-    padding: 20px 0;
-    text-align: center;
-}
-
-.company-matrix {
-    width: 70%;
-    margin: 0 auto;
-}
-
-.company-matrix li {
-    display: inline-block;
-    width: 32%;
-    text-align: center;
-    padding: 20px;
-    box-sizing: border-box;
-    vertical-align: baseline;
-    vertical-align: -webkit-baseline-middle;
-}
-
-.company-matrix img {
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
-    width: 150px;
-    height: auto;
-}
-
-.section-title {
-    font-size: 35px;
-    text-align: center;
-    padding: 20px 0;
-    font-family: "raleway";
-}
-
-
-.why-us {
-    background: #eee;
-}
-
-.why-us .section-title {
-    padding-bottom: 45px;
-}
-
-.answers {
-    margin: 0 auto;
-    text-align: center;
-}
-
-.answers .ans {
-    display: inline-block;
-    width: 300px;
-    height: 200px;
-}
-
-.answers .ans .desc {
-    min-height: 35px;
-    padding-top: 20px;
-    display: block;
-    vertical-align: baseline;
-}
-
-.answers .ans:nth-child(2n + 1) {
-    clear: left;
-}
-
-.answers .ans:nth-child(2n) {
-    clear: right;
-}
-
-.no-border {
-    margin: 0 !important;
-}
-
-.fullWidth {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: initial;
-}
-
-#footer {
-    background-color: #000;
-    color: #CCC;
-    padding: 20px 0 40px;
-    margin-top: 20px;
-    line-height: 1.6;
-    a:hover {
-        color: #FFF;
-    }
-
-    &>div {
-        padding-top: 20px;
-    }
-
-    .newsletter {
-
-        & > div {
-            padding: 8px 0;
-        }
-
-        input {
-            background-color: #000;
-            color: #DDD;
-            border: 1px solid #555;
-            margin: 0;
-        }
-        .button {
-            color: #000;
-            background-color: #CCC;
-            margin: 0;
-
-            &:hover {
-                background-color: #FFF;
-            }
         }
     }
 
-    .social-media {
+    .testimonials {
+        width: 80%;
+        margin: 20px auto 30px;
+    }
 
+
+    .testimonials .sliders img {
+        height: 100px;
+        border-radius: 100px;
+        float: left;
+    }
+
+    .testimonials .sliders .says {
+        float: left;
+        line-height: 100px;
+        padding: 0 30px;
+        font-style: italic;
+    }
+
+    .testimonials .title {
+        font-size: 30px;
         text-align: center;
-
-        &>div {
-            margin-top: 0;
-            padding: 8px 0;
-        }
-
-        p {
-            text-transform: uppercase;
-        }
-
-        img {
-            height: 30px;
-            width: auto;
-            padding: 0 8px;
-        }
-
+        font-family: "raleway";
+        padding: 10px 0;
     }
 
-    .links {
-        text-align: right;
-        padding-top: 30px;
-        a {
-            color: #DDD;
+    .companies {
+        background-color: #EEE;
+    }
 
-            &:hover {
+    .companies .title {
+        font-size: 30px;
+        font-family: "raleway";
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .company-matrix {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .company-matrix li {
+        display: inline-block;
+        width: 32%;
+        text-align: center;
+        padding: 20px;
+        box-sizing: border-box;
+        vertical-align: baseline;
+        vertical-align: -webkit-baseline-middle;
+    }
+
+    .company-matrix img {
+        filter: grayscale(100%);
+        -webkit-filter: grayscale(100%);
+        width: 150px;
+        height: auto;
+    }
+
+    .section-title {
+        font-size: 35px;
+        text-align: center;
+        padding: 20px 0;
+        font-family: "raleway";
+    }
+
+
+    .why-us {
+        background: #eee;
+    }
+
+    .why-us .section-title {
+        padding-bottom: 45px;
+    }
+
+    .answers {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .answers .ans {
+        display: inline-block;
+        width: 300px;
+        height: 200px;
+    }
+
+    .answers .ans .desc {
+        min-height: 35px;
+        padding-top: 20px;
+        display: block;
+        vertical-align: baseline;
+    }
+
+    .answers .ans:nth-child(2n + 1) {
+        clear: left;
+    }
+
+    .answers .ans:nth-child(2n) {
+        clear: right;
+    }
+
+    .no-border {
+        margin: 0 !important;
+    }
+
+    .fullWidth {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: initial;
+    }
+
+    #footer {
+        background-color: #000;
+        color: #CCC;
+        padding: 20px 0 40px;
+        margin-top: 20px;
+        line-height: 1.6;
+        a:hover {
             color: #FFF;
         }
+
+        &>div {
+            padding-top: 20px;
         }
+
+        .newsletter {
+
+            & > div {
+                padding: 8px 0;
+            }
+
+            input {
+                background-color: #000;
+                color: #DDD;
+                border: 1px solid #555;
+                margin: 0;
+            }
+            .button {
+                color: #000;
+                background-color: #CCC;
+                margin: 0;
+
+                &:hover {
+                    background-color: #FFF;
+                }
+            }
+        }
+
+        .social-media {
+
+            text-align: center;
+
+            &>div {
+                margin-top: 0;
+                padding: 8px 0;
+            }
+
+            p {
+                text-transform: uppercase;
+            }
+
+            img {
+                height: 30px;
+                width: auto;
+                padding: 0 8px;
+            }
+
+        }
+
+        .links {
+            text-align: right;
+            padding-top: 30px;
+            a {
+                color: #DDD;
+
+                &:hover {
+                    color: #FFF;
+                }
+            }
+        }
+
     }
 
-}

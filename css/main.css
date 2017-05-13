@@ -57,10 +57,12 @@ table {
   src: url("fonts/Flaticon.eot?#iefix") format("embedded-opentype"), url("fonts/Flaticon.woff") format("woff"), url("fonts/Flaticon.ttf") format("truetype"), url("fonts/Flaticon.svg#Flaticon") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   @font-face {
     font-family: "Flaticon";
     src: url("fonts/Flaticon.svg#Flaticon") format("svg"); } }
+
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
 [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
   font-family: Flaticon;
@@ -278,36 +280,25 @@ header .head-nav li a {
 .first-carousel .slide-1 {
   background-image: url("../assets/slide-1.jpg"); }
 
-.first-carousel .slide-1 p {
-  font-size: 50px;
-  margin: 70px 0 0 70px;
-  color: #000;
-  top: 50px;
-  background-position: center center; }
-
-.first-carousel .slide-2 p {
-  font-size: 50px;
-  margin: 70px 0 0 70px;
-  color: #000;
-  top: 50px;
-  background-position: center center; }
-
-.first-carousel .slide-3 p {
-  font-size: 50px;
-  margin: 70px 0 0 70px;
-  color: #FFF;
-  top: 50px;
-  background-position: center center; }
+.first-carousel .quote {
+  font-family: "raleway";
+  width: 500px;
+  margin: 50px auto;
+  text-align: center;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 5px; }
+  .first-carousel .quote h1 {
+    font-size: 30px;
+    font-weight: bold; }
+  .first-carousel .quote p {
+    margin-top: 7px; }
 
 .first-carousel .slide-2 {
   background-image: url("../assets/slide-2.jpg"); }
 
 .first-carousel .slide-3 {
   background-image: url("../assets/slide-3.jpg"); }
-
-.courses {
-  max-width: 1024px;
-  margin: 40px auto 0; }
 
 .courses .course-caption {
   font-size: 50px;
@@ -319,15 +310,6 @@ header .head-nav li a {
   font-weight: lighter;
   line-height: 20px;
   margin: 20px 0; }
-
-.courses .course-info {
-  box-sizing: border-box;
-  width: 48%;
-  margin: 0 18px 20px 0;
-  display: inline-block;
-  background-color: #EEE;
-  border-radius: 10px 10px 0 0;
-  position: relative; }
 
 .course-info .course-title > p {
   display: inline-block;
@@ -538,5 +520,3 @@ header .head-nav li a {
       color: #DDD; }
       #footer .links a:hover {
         color: #FFF; }
-
-/*# sourceMappingURL=main.css.map */

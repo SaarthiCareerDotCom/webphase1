@@ -1,3 +1,3 @@
 #!/bin/bash
-node-sass course.scss course.css
+node-sass main.scss main.css
 echo 'done'
