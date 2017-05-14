@@ -571,3 +571,21 @@ header .head-nav li a {
 
 .course-info.analytics .image {
   background-image: url("/assets/interview.jpg"); }
+
+#signUpModal .message {
+  font-size: 25px;
+  color: #25274D;
+  padding: 0 0 15px; }
+
+#signUpModal .submit {
+  padding: 10px 27px;
+  margin-top: 15px;
+  display: inline-block;
+  border: 2px solid #25274D;
+  color: #25274D;
+  cursor: pointer; }
+  #signUpModal .submit:hover {
+    background-color: #2E9CCA; }
+
+#signUpModal .form-success {
+  display: none; }

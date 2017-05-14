@@ -366,7 +366,8 @@ $inactive : #29648A;
     }
   }
   .icon-desc {
-    margin-top: 10px
+    margin-top: 10px;
+    line-height: 1.3;
   }
 }
 
@@ -462,4 +463,32 @@ section .accordion-title {
 
 section .accordion-content {
   color: $darker-bg;
+}
+
+.enroll-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 27px;
+  border-radius: 20px;
+  background-color: $bright;
+  span {
+    color: white;
+  }
+  &:hover {
+    span {
+      color: $darker-bg;
+    }
+  }
+}
+
+.course-highlight {
+  ol {
+    list-style-type: decimal;
+  }
+  p {
+    line-height: 1.4;
+  }
 }
