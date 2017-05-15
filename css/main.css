@@ -221,6 +221,9 @@ table {
   content: "\f131"; }
 
 /* main.css */
+.dark {
+  color: #FFF; }
+
 body {
   font-family: 'Roboto', sans-serif; }
 
@@ -236,10 +239,11 @@ header .logo img {
 
 header {
   width: 100%;
-  background-color: #25274D;
   height: 10vh;
   line-height: 80px;
-  color: #2E9CCA; }
+  color: #FFF; }
+  header a {
+    color: #FFF; }
 
 header .head-nav {
   position: relative;
@@ -263,9 +267,9 @@ header .head-nav li a {
 
 .first-carousel {
   width: 100%;
-  background: #BBB;
-  margin: 10vh auto 0;
-  font-family: 'raleway'; }
+  background-color: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  background-image: url(/img/city_bg.jpg);
+  background-size: cover; }
 
 .first-carousel .slick-slide {
   height: 90vh;
@@ -283,7 +287,6 @@ header .head-nav li a {
   background-size: cover; }
 
 .first-carousel .quote {
-  font-family: "raleway";
   width: 70%;
   margin: 50px 0 0 50px;
   text-align: left;
@@ -436,7 +439,6 @@ header .head-nav li a {
 .testimonials .title {
   font-size: 30px;
   text-align: center;
-  font-family: "raleway";
   padding: 10px 0; }
 
 .companies {
@@ -444,7 +446,6 @@ header .head-nav li a {
 
 .companies .title {
   font-size: 30px;
-  font-family: "raleway";
   padding: 20px 0;
   text-align: center; }
 
@@ -470,13 +471,12 @@ header .head-nav li a {
 .section-title {
   font-size: 35px;
   padding: 20px 0;
-  font-family: "raleway";
   font-weight: bold;
   text-align: left;
   color: #25274D; }
 
 .why-us {
-  background: #f5f9ff;
+  background: #AAABB8;
   padding-top: 30px; }
   .why-us .text {
     line-height: 1.4;

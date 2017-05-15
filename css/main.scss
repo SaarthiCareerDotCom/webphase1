@@ -136,17 +136,22 @@ table {
 
 /* main.css */
 
-//$darker-bg: #25274D;
-//$dark-bg : #464866;
-//$med-bg : #AAABB8;
-//$bright : #2E9CCA;
-//$inactive : #29648A;
-
 $darker-bg: #25274D;
 $dark-bg : #464866;
-$med-bg : #f5f9ff;
+$med-bg : #AAABB8;
 $bright : #2E9CCA;
 $inactive : #29648A;
+
+$dark-text : #FFF;
+
+// https://webgradients.com/
+//019 background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+$malibu: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+
+
+.dark {
+    color: $dark-text;
+}
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -167,10 +172,12 @@ header .logo img {
 
 header {
     width: 100%;
-    background-color: $darker-bg;
     height: 10vh;
     line-height: 80px;
-    color: $bright;
+    color: $dark-text;
+    a{
+        color: $dark-text;
+    }
 }
 
 header .head-nav {
@@ -201,9 +208,9 @@ header .head-nav li a {
 
 .first-carousel {
     width: 100%;
-    background: #BBB;
-    margin: 10vh auto 0;
-    font-family: 'raleway';
+    background-color: $malibu;
+    background-image: url(/img/city_bg.jpg);
+    background-size: cover;
 }
 
 .first-carousel .slick-slide {
@@ -227,7 +234,6 @@ header .head-nav li a {
         background-size: cover;
     }
     .quote {
-        font-family: "raleway";
         width: 70%;
         margin: 50px 0 0 50px;
         text-align: left;
@@ -462,7 +468,6 @@ header .head-nav li a {
     .testimonials .title {
         font-size: 30px;
         text-align: center;
-        font-family: "raleway";
         padding: 10px 0;
     }
 
@@ -472,7 +477,6 @@ header .head-nav li a {
 
     .companies .title {
         font-size: 30px;
-        font-family: "raleway";
         padding: 20px 0;
         text-align: center;
     }
@@ -502,7 +506,6 @@ header .head-nav li a {
     .section-title {
         font-size: 35px;
         padding: 20px 0;
-        font-family: "raleway";
         font-weight: bold;
         text-align: left;
         color: #25274D;
