@@ -58,6 +58,11 @@ table {
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'Bariol';
+  src: url("fonts/bariol_regular-webfont.eot");
+  src: url("fonts/bariol_regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/bariol_regular-webfont.woff") format("woff"), url("fonts/bariol_regular-webfont.ttf") format("truetype"), url("fonts/bariol_regular-webfont.svg#webfont") format("svg"); }
+
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   @font-face {
     font-family: "Flaticon";
@@ -233,9 +238,10 @@ header {
 header > div {
   display: inline-block; }
 
-header .logo img {
-  height: 3vh;
-  padding-left: 25px; }
+header .logo {
+  font-family: "Bariol";
+  font-size: 36px;
+  font-weight: bold; }
 
 header {
   width: 100%;
@@ -267,38 +273,21 @@ header .head-nav li a {
 
 .first-carousel {
   width: 100%;
-  background-color: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
   background-image: url(/img/city_bg.jpg);
-  background-size: cover; }
-
-.first-carousel .slick-slide {
-  height: 90vh;
-  background-size: cover; }
-
-.first-carousel .slick-next {
-  right: 10px; }
-
-.first-carousel .slick-prev {
-  left: 10px;
-  z-index: 10; }
-
-.first-carousel .slide-1 {
-  background-image: url("../assets/mountain.jpg");
-  background-size: cover; }
+  background-size: cover;
+  height: 100vh; }
 
 .first-carousel .quote {
   width: 70%;
-  margin: 50px 0 0 50px;
+  margin: 100px 0 0 0;
   text-align: left;
-  padding: 15px;
-  color: #2E9CCA;
   border-radius: 5px; }
   .first-carousel .quote h1 {
     font-size: 70px;
     font-weight: bold;
     padding-bottom: 20px; }
   .first-carousel .quote p {
-    font-size: 20px; }
+    font-size: 25px; }
 
 .first-carousel .slide-2 {
   background-image: url("../assets/slide-2.jpg"); }
@@ -313,48 +302,74 @@ header .head-nav li a {
   margin-bottom: 20px; }
 
 .course-know {
-  border-bottom: 2px solid #25274D;
   overflow: hidden; }
   .course-know .action {
-    cursor: pointer;
     display: inline-block;
     right: 0;
     bottom: 0;
-    padding: 4px 20px 10px;
-    margin-bottom: 10px;
-    border: 2px solid #25274D;
-    color: #25274D;
+    margin: 10px;
     float: right; }
-  .course-know .action:hover {
-    border-color: #2E9CCA;
-    background: #2E9CCA;
-    color: #FFF; }
+  .course-know .start-date {
+    display: inline-block;
+    float: left;
+    margin: 25px;
+    font-weight: bold; }
   .course-know img {
     height: 20px;
     position: relative;
     top: 4px; }
 
 .courses .course-text {
-  font-weight: lighter;
+  padding: 10px 25px;
   line-height: 20px; }
 
 .course-info {
   position: relative;
   margin-bottom: 30px; }
-  .course-info > div {
-    padding: 0 15px; }
+  .course-info:hover .course-title {
+    background-color: rgba(0, 0, 0, 0.2); }
 
-.course-info .course-title > p {
-  display: inline-block;
-  font-size: 25px;
-  padding: 0 20px;
-  line-height: 45px;
-  display: block;
-  background-color: #25274D;
-  color: #2E9CCA; }
+.course-info.coming-soon {
+  margin: 100px auto 0; }
+  .course-info.coming-soon .notice {
+    border: 2px dashed #2E9CCA;
+    color: #2E9CCA;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center; }
+    .course-info.coming-soon .notice p {
+      margin: 30px 10px; }
+
+.course-info .course-title {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.3s; }
+  .course-info .course-title > p {
+    display: inline-block;
+    font-size: 25px;
+    margin: 15px 25px;
+    line-height: 45px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    color: #FFF;
+    font-weight: 500; }
 
 .course-info .course-description {
-  padding: 10px 0; }
+  padding: 10px 0 0;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#667eea+0,764ba2+100 */
+  background: #667eea;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #667eea 0%, #764ba2 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #667eea 0%, #764ba2 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#667eea', endColorstr='#764ba2',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */ }
 
 .course-info .course-description > ul {
   list-style: disc inside none;
@@ -476,36 +491,33 @@ header .head-nav li a {
   color: #25274D; }
 
 .why-us {
-  background: #AAABB8;
+  background-color: #f6f9fc;
   padding-top: 30px; }
   .why-us .text {
     line-height: 1.4;
     max-width: 70%; }
+  .why-us .section-title {
+    text-align: center; }
 
 .why-us .section-title {
   padding-bottom: 45px; }
 
 .answers {
   margin: 0 auto;
-  text-align: left;
+  text-align: center;
   font-weight: bold; }
 
 .answers .ans {
-  display: inline-block;
-  width: 300px;
   height: 200px; }
+  .answers .ans img {
+    height: 70px; }
 
 .answers .ans .desc {
   min-height: 35px;
   padding-top: 20px;
   display: block;
-  vertical-align: baseline; }
-
-.answers .ans:nth-child(2n + 1) {
-  clear: left; }
-
-.answers .ans:nth-child(2n) {
-  clear: right; }
+  vertical-align: baseline;
+  font-weight: 200; }
 
 .no-border {
   margin: 0 !important; }
@@ -560,17 +572,19 @@ header .head-nav li a {
 
 .course-info .image {
   width: 100%;
-  height: 200px;
-  background-size: cover; }
+  height: 250px;
+  background-size: cover;
+  background-position: 0;
+  position: relative; }
 
 .course-info.oops .image {
-  background-image: url("/assets/med1.jpg"); }
+  background-image: url("/img/oops.jpg"); }
 
 .course-info.data .image {
-  background-image: url("/assets/math.jpg"); }
+  background-image: url("/img/data.jpg"); }
 
 .course-info.analytics .image {
-  background-image: url("/assets/interview.jpg"); }
+  background-image: url("/img/analytics.jpg"); }
 
 #signUpModal .message {
   font-size: 25px;
@@ -589,6 +603,44 @@ header .head-nav li a {
 
 #signUpModal .form-success {
   display: none; }
+
+.grad-bg-button {
+  cursor: pointer;
+  padding: 4px 20px 10px;
+  color: #25274D;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4facfe+0,00f2fe+100 */
+  background: #4facfe;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #4facfe 0%, #00f2fe 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #4facfe 0%, #00f2fe 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4facfe', endColorstr='#00f2fe',GradientType=1 );
+  /* IE6-9 */ }
+  .grad-bg-button > div {
+    padding: 4px 20px 10px;
+    margin: 3px;
+    background: white; }
+  .grad-bg-button a {
+    margin: 2px; }
+  .grad-bg-button:hover > div {
+    background: white; }
+
+.grad-bg-button-dark div {
+  cursor: pointer;
+  padding: 7px 20px 13px;
+  background: #FFF;
+  border: 2px solid #FFF;
+  border-radius: 25px; }
+
+.grad-bg-button-dark a {
+  color: #25274D;
+  font-weight: bold; }
+
+.grad-bg-button-dark:hover {
+  background: transparent; }
 
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
   .why-us .section-title {

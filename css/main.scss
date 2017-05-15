@@ -67,6 +67,15 @@ table {
     font-style: normal;
 }
 
+@font-face{
+    font-family: 'Bariol';
+    src: url('fonts/bariol_regular-webfont.eot');
+    src: url('fonts/bariol_regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/bariol_regular-webfont.woff') format('woff'),
+    url('fonts/bariol_regular-webfont.ttf') format('truetype'),
+    url('fonts/bariol_regular-webfont.svg#webfont') format('svg');
+}
+
 @media screen and (-webkit-min-device-pixel-ratio:0) {
     @font-face {
         font-family: "Flaticon";
@@ -146,8 +155,34 @@ $dark-text : #FFF;
 
 // https://webgradients.com/
 //019 background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
-$malibu: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+@mixin malibu {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4facfe+0,00f2fe+100 */
+    background: rgb(79,172,254); /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(79,172,254,1) 0%, rgba(0,242,254,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(79,172,254,1) 0%,rgba(0,242,254,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(79,172,254,1) 0%,rgba(0,242,254,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4facfe', endColorstr='#00f2fe',GradientType=1 ); /* IE6-9 */
+}
 
+@mixin plumPlate {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#667eea+0,764ba2+100 */
+    background: rgb(102,126,234); /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  rgba(102,126,234,1) 0%, rgba(118,75,162,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  rgba(102,126,234,1) 0%,rgba(118,75,162,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  rgba(102,126,234,1) 0%,rgba(118,75,162,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#667eea', endColorstr='#764ba2',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+@mixin distinct {
+    background-color: #f6f9fc;
+}
+
+@mixin subtle-dropshadow {
+  -webkit-box-shadow: 0 4px 4px rgba(100, 100, 100, 0.49);
+  -moz-box-shadow:    0 4px 4px rgba(100, 100, 100, 0.49);
+  box-shadow:         0 4px 4px rgba(100, 100, 100, 0.49);
+}
 
 .dark {
     color: $dark-text;
@@ -165,9 +200,10 @@ header > div {
     display: inline-block;
 }
 
-header .logo img {
-    height: 3vh;
-    padding-left: 25px;
+header .logo {
+    font-family: "Bariol";
+    font-size: 36px;
+    font-weight: bold;
 }
 
 header {
@@ -208,37 +244,17 @@ header .head-nav li a {
 
 .first-carousel {
     width: 100%;
-    background-color: $malibu;
     background-image: url(/img/city_bg.jpg);
     background-size: cover;
-}
-
-.first-carousel .slick-slide {
-    height: 90vh;
-    background-size: cover;
-}
-
-.first-carousel .slick-next {
-    right: 10px;
-}
-
-.first-carousel .slick-prev {
-    left: 10px;
-    z-index: 10;
+    height: 100vh;
 }
 
 
 .first-carousel {
-    .slide-1 {
-        background-image: url("../assets/mountain.jpg");
-        background-size: cover;
-    }
     .quote {
         width: 70%;
-        margin: 50px 0 0 50px;
+        margin: 100px 0 0 0;
         text-align: left;
-        padding: 15px;
-        color: $bright;
         border-radius: 5px;
         h1 {
             font-size: 70px;
@@ -246,7 +262,7 @@ header .head-nav li a {
             padding-bottom: 20px;
         }
         p {
-            font-size: 20px;
+            font-size: 25px;
         }
     }
 }
@@ -301,24 +317,20 @@ header .head-nav li a {
     }
 
     .course-know {
-        border-bottom: 2px solid $darker-bg;
-        overflow: hidden;
         .action {
-            cursor: pointer;
             display: inline-block;
             right: 0;
             bottom: 0;
-            padding: 4px 20px 10px;
-            margin-bottom: 10px;
-            border: 2px solid $darker-bg;
-            color: $darker-bg;
+            margin: 10px;
             float: right;
         }
-        .action:hover {
-            border-color: $bright;
-            background: $bright;
-            color: #FFF;
+        .start-date {
+            display: inline-block;
+            float: left;
+            margin: 25px;
+            font-weight: bold;
         }
+        overflow: hidden;
         img {
             height: 20px;
             position: relative;
@@ -327,7 +339,7 @@ header .head-nav li a {
     }
 
     .courses .course-text {
-        font-weight: lighter;
+        padding: 10px 25px;
         line-height: 20px;
     }
     //
@@ -344,23 +356,48 @@ header .head-nav li a {
     .course-info {
         position: relative;
         margin-bottom: 30px;
-        &>div {
-            padding: 0 15px;
+        &:hover {
+            .course-title {
+                background-color: rgba(0,0,0,0.2);
+            }
+        }
+    }
+    .course-info.coming-soon {
+        margin: 100px auto 0;
+        .notice {
+            border: 2px dashed $bright;
+            color: $bright;
+            width: 60%;
+            margin: 0 auto;
+            text-align: center;
+            p {
+                margin: 30px 10px;
+            }
         }
     }
 
-    .course-info .course-title > p {
-        display: inline-block;
-        font-size: 25px;
-        padding: 0 20px;
-        line-height: 45px;
-        display: block;
-        background-color: $darker-bg;
-        color: $bright;
+    .course-info .course-title {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.5);
+        transition: all 0.3s;
+        & > p {
+            display: inline-block;
+            font-size: 25px;
+            margin: 15px 25px;
+            line-height: 45px;
+            display: block;
+            position: absolute;
+            bottom: 0;
+            color: #FFF;
+            font-weight: 500;
+        }
     }
 
     .course-info .course-description {
-        padding: 10px 0;
+        padding: 10px 0 0;
+        @include plumPlate();
     }
 
     .course-info .course-description > ul {
@@ -513,12 +550,15 @@ header .head-nav li a {
 
 
     .why-us {
-        background: $med-bg;
+        @include distinct();
         padding-top: 30px;
         .text {
             line-height: 1.4;
             max-width: 70%;
         }
+      .section-title {
+        text-align: center;
+      }
     }
 
     .why-us .section-title {
@@ -527,14 +567,15 @@ header .head-nav li a {
 
     .answers {
         margin: 0 auto;
-        text-align: left;
+        text-align: center;
         font-weight: bold;
     }
 
     .answers .ans {
-        display: inline-block;
-        width: 300px;
         height: 200px;
+        img {
+          height: 70px;
+        }
     }
 
     .answers .ans .desc {
@@ -542,14 +583,7 @@ header .head-nav li a {
         padding-top: 20px;
         display: block;
         vertical-align: baseline;
-    }
-
-    .answers .ans:nth-child(2n + 1) {
-        clear: left;
-    }
-
-    .answers .ans:nth-child(2n) {
-        clear: right;
+        font-weight: 200;
     }
 
     .no-border {
@@ -637,20 +671,22 @@ header .head-nav li a {
 
 .course-info .image {
     width: 100%;
-    height: 200px;
+    height: 250px;
     background-size: cover;
+    background-position: 0;
+    position: relative;
 }
 
 .course-info.oops .image {
-    background-image: url("/assets/med1.jpg");
+    background-image: url("/img/oops.jpg");
 }
 
 .course-info.data .image {
-    background-image: url("/assets/math.jpg");
+    background-image: url("/img/data.jpg");
 }
 
 .course-info.analytics .image {
-    background-image: url("/assets/interview.jpg");
+    background-image: url("/img/analytics.jpg");
 }
 
 #signUpModal {
@@ -672,6 +708,43 @@ header .head-nav li a {
     }
     .form-success {
         display: none;
+    }
+}
+
+.grad-bg-button {
+    cursor: pointer;
+    padding: 4px 20px 10px;
+    color: $darker-bg;
+    @include malibu();
+    & > div {
+        padding: 4px 20px 10px;
+        margin: 3px;
+        background: white;
+    }
+    a {
+        margin: 2px;
+    }
+    &:hover {
+        &>div {
+            background: white;
+        }
+    }
+}
+
+.grad-bg-button-dark {
+    div {
+        cursor: pointer;
+        padding: 7px 20px 13px;
+        background: #FFF;
+        border: 2px solid #FFF;
+        border-radius: 25px;
+    }
+    a {
+        color: $darker-bg;
+        font-weight: bold;
+    }
+    &:hover {
+        background: rgba(0,0,0,0);
     }
 }
 
