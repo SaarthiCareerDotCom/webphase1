@@ -10,7 +10,7 @@
   background-image: url("/assets/oops.jpg"); }
 
 .hero-text {
-  width: 40%;
+  width: 50%;
   text-align: left;
   padding: 20px 0;
   font-family: "raleway";
@@ -230,7 +230,11 @@
   font-size: 16px;
   color: #000;
   background: #DDD;
-  text-decoration: none; }
+  text-decoration: none;
+  padding: 0.75rem; }
+
+.accordion-content {
+  padding: 1rem; }
 
 .description .text {
   font-size: 25px;
@@ -287,12 +291,15 @@
   border-radius: 4px;
   line-height: 1.5;
   cursor: pointer; }
+  .batch .timings-venue-label {
+    font-weight: bold;
+    font-size: 16px; }
   .batch .name {
     font-weight: bold;
     font-size: 20px; }
   .batch .text {
-    padding: 10px 20px;
-    margin-left: 15px;
+    padding: 10px 10px;
+    margin-left: 5px;
     font-weight: 100; }
   .batch .enroll {
     display: block;
@@ -364,3 +371,12 @@ section .accordion-content {
 
 .course-highlight p {
   line-height: 1.4; }
+
+.icons8-Google-Maps {
+  fill: false;
+  width: 24px;
+  height: 24px;
+  vertical-align: text-bottom; }
+
+.icon {
+  display: inline-block; }

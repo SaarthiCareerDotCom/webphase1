@@ -18,7 +18,7 @@ $inactive : #29648A;
 }
 
 .hero-text {
-    width: 40%;
+    width: 50%;
     text-align: left;
     padding: 20px 0;
     font-family: "raleway";
@@ -320,6 +320,11 @@ $inactive : #29648A;
   color: #000;
   background: #DDD;
   text-decoration: none;
+  padding: 0.75rem;
+}
+
+.accordion-content {
+  padding: 1rem;
 }
 
 .description {
@@ -394,13 +399,17 @@ $inactive : #29648A;
   border-radius: 4px;
   line-height: 1.5;
   cursor: pointer;
+  .timings-venue-label {
+    font-weight: bold;
+    font-size: 16px; 
+  }
   .name {
     font-weight: bold;
     font-size: 20px;
   }
   .text {
-    padding: 10px 20px;
-    margin-left: 15px;
+    padding: 10px 10px;
+    margin-left: 5px;
     font-weight: 100;
   }
   .enroll {
@@ -491,4 +500,14 @@ section .accordion-content {
   p {
     line-height: 1.4;
   }
+}
+
+.icons8-Google-Maps { 
+  fill: false;
+  width: 24px;
+  height: 24px;
+  vertical-align: text-bottom;
+}
+.icon { 
+  display: inline-block;
 }

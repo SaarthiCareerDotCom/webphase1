@@ -339,7 +339,7 @@ header .head-nav li a {
   position: relative;
   margin-bottom: 30px; }
   .course-info > div {
-    padding: 0 10px; }
+    padding: 0 15px; }
 
 .course-info .course-title > p {
   display: inline-block;
@@ -382,7 +382,7 @@ header .head-nav li a {
   text-decoration: none; }
 
 .our-trainers {
-  background-color: #fff; }
+  background-color: #FFFFFF; }
   .our-trainers .trainer-box {
     text-align: center;
     padding-bottom: 30px; }
