@@ -272,7 +272,7 @@
   line-height: 1.3; }
 
 .type1.dark {
-  background: #fff; }
+  background: #f5f9ff; }
 
 .batches {
   margin-top: 20px;
@@ -347,7 +347,7 @@ section .accordion-item.is-active .accordion-title, section .accordion-item:hove
   background-color: #25274D; }
 
 section .accordion-title {
-  background-color: #fff; }
+  background-color: #f5f9ff; }
 
 section .accordion-content {
   color: #25274D; }
