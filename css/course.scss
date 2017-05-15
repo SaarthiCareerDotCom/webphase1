@@ -1,6 +1,6 @@
 $darker-bg: #25274D;
 $dark-bg : #464866;
-$med-bg : #AAABB8;
+$med-bg : #fff;
 $bright : #2E9CCA;
 $inactive : #29648A;
 
@@ -372,7 +372,7 @@ $inactive : #29648A;
 }
 
 .type1.dark {
-  background: #DDD;
+  background: $med-bg;
 }
 
 .batches {

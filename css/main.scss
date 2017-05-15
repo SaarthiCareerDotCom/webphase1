@@ -136,9 +136,15 @@ table {
 
 /* main.css */
 
+//$darker-bg: #25274D;
+//$dark-bg : #464866;
+//$med-bg : #AAABB8;
+//$bright : #2E9CCA;
+//$inactive : #29648A;
+
 $darker-bg: #25274D;
 $dark-bg : #464866;
-$med-bg : #AAABB8;
+$med-bg : #fff;
 $bright : #2E9CCA;
 $inactive : #29648A;
 
@@ -222,7 +228,7 @@ header .head-nav li a {
     }
     .quote {
         font-family: "raleway";
-        width: 900px;
+        width: 70%;
         margin: 50px 0 0 50px;
         text-align: left;
         padding: 15px;
@@ -332,6 +338,9 @@ header .head-nav li a {
     .course-info {
         position: relative;
         margin-bottom: 30px;
+        &>div {
+            padding: 0 15px;
+        }
     }
 
     .course-info .course-title > p {
@@ -342,7 +351,6 @@ header .head-nav li a {
         display: block;
         background-color: $darker-bg;
         color: $bright;
-        font-weight: lighter;
     }
 
     .course-info .course-description {
@@ -518,7 +526,6 @@ header .head-nav li a {
         margin: 0 auto;
         text-align: left;
         font-weight: bold;
-        color: #FFF;
     }
 
     .answers .ans {
@@ -662,5 +669,36 @@ header .head-nav li a {
     }
     .form-success {
         display: none;
+    }
+}
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+    .why-us {
+        .section-title {
+            padding-bottom: 20px;
+            padding-top: 0;
+        }
+        .text {
+            padding-bottom: 20px;
+        }
+        .icons {
+            text-align: center;
+        }
+    }
+    .answers {
+        display: inline-block;
+        text-align: center;
+    }
+    .trainer-box {
+        .column {
+            margin-bottom: 20px;
+        }
+    }
+
+    .testimonial  {
+        img, .says {
+            float: none;
+            text-align: center;
+        }
     }
 }

@@ -284,7 +284,7 @@ header .head-nav li a {
 
 .first-carousel .quote {
   font-family: "raleway";
-  width: 900px;
+  width: 70%;
   margin: 50px 0 0 50px;
   text-align: left;
   padding: 15px;
@@ -338,6 +338,8 @@ header .head-nav li a {
 .course-info {
   position: relative;
   margin-bottom: 30px; }
+  .course-info > div {
+    padding: 0 10px; }
 
 .course-info .course-title > p {
   display: inline-block;
@@ -346,8 +348,7 @@ header .head-nav li a {
   line-height: 45px;
   display: block;
   background-color: #25274D;
-  color: #2E9CCA;
-  font-weight: lighter; }
+  color: #2E9CCA; }
 
 .course-info .course-description {
   padding: 10px 0; }
@@ -381,7 +382,7 @@ header .head-nav li a {
   text-decoration: none; }
 
 .our-trainers {
-  background-color: #AAABB8; }
+  background-color: #fff; }
   .our-trainers .trainer-box {
     text-align: center;
     padding-bottom: 30px; }
@@ -475,7 +476,7 @@ header .head-nav li a {
   color: #25274D; }
 
 .why-us {
-  background: #AAABB8;
+  background: #fff;
   padding-top: 30px; }
   .why-us .text {
     line-height: 1.4;
@@ -487,8 +488,7 @@ header .head-nav li a {
 .answers {
   margin: 0 auto;
   text-align: left;
-  font-weight: bold;
-  color: #FFF; }
+  font-weight: bold; }
 
 .answers .ans {
   display: inline-block;
@@ -589,3 +589,20 @@ header .head-nav li a {
 
 #signUpModal .form-success {
   display: none; }
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .why-us .section-title {
+    padding-bottom: 20px;
+    padding-top: 0; }
+  .why-us .text {
+    padding-bottom: 20px; }
+  .why-us .icons {
+    text-align: center; }
+  .answers {
+    display: inline-block;
+    text-align: center; }
+  .trainer-box .column {
+    margin-bottom: 20px; }
+  .testimonial img, .testimonial .says {
+    float: none;
+    text-align: center; } }
