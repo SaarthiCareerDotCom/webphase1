@@ -10,7 +10,7 @@
   background-image: url("/assets/oops.jpg"); }
 
 .hero-text {
-  width: 40%;
+  width: 50%;
   text-align: left;
   padding: 20px 0;
   font-family: "raleway";
@@ -230,7 +230,9 @@
   font-size: 16px;
   color: #000;
   background: #DDD;
-  text-decoration: none; }
+  text-decoration: none;
+  padding: 0.75rem; 
+  }
 
 .description .text {
   font-size: 25px;
@@ -257,7 +259,8 @@
 
 .highlights .icons .column-block {
   border-radius: 4px; }
-  .highlights .icons .column-block > .row {
+
+.highlights .icons .column-block > .row {
     margin: 10px 0;
     border: 2px solid black;
     padding: 10px 0;
@@ -290,9 +293,12 @@
   .batch .name {
     font-weight: bold;
     font-size: 20px; }
+  .batch .timings-venue-label {
+    font-weight: bold;
+    font-size: 16px; }
   .batch .text {
-    padding: 10px 20px;
-    margin-left: 15px;
+    padding: 10px 10px;
+    margin-left: 5px;
     font-weight: 100; }
   .batch .enroll {
     display: block;
@@ -345,6 +351,9 @@ section .accordion-title {
 section .accordion-content {
   color: #25274D; }
 
+.accordion-content {
+  padding: 1rem;
+}
 .enroll-float {
   position: fixed;
   bottom: 20px;
@@ -364,3 +373,13 @@ section .accordion-content {
 
 .course-highlight p {
   line-height: 1.4; }
+
+.icons8-Google-Maps { 
+  fill: false;
+  width: 24px;
+  height: 24px;
+  vertical-align: text-bottom;
+}
+.icon { 
+  display: inline-block;
+}

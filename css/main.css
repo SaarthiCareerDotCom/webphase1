@@ -381,10 +381,12 @@ header .head-nav li a {
   text-decoration: none; }
 
 .our-trainers {
-  background-color: #AAABB8; }
+  background-color: #FFFFFF; 
+  }
   .our-trainers .trainer-box {
     text-align: center;
-    padding-bottom: 30px; }
+    padding-bottom: 30px; 
+    }
     .our-trainers .trainer-box .trainer {
       position: relative;
       background: #25274D;
