@@ -142,47 +142,8 @@ table {
 .flaticon-virus:before { content: "\f130"; }
 .flaticon-water:before { content: "\f131"; }
 
+@import "vars";
 
-/* main.css */
-
-$darker-bg: #25274D;
-$dark-bg : #464866;
-$med-bg : #AAABB8;
-$bright : #2E9CCA;
-$inactive : #29648A;
-
-$dark-text : #FFF;
-
-// https://webgradients.com/
-//019 background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
-@mixin malibu {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4facfe+0,00f2fe+100 */
-    background: rgb(79,172,254); /* Old browsers */
-    background: -moz-linear-gradient(left, rgba(79,172,254,1) 0%, rgba(0,242,254,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, rgba(79,172,254,1) 0%,rgba(0,242,254,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, rgba(79,172,254,1) 0%,rgba(0,242,254,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4facfe', endColorstr='#00f2fe',GradientType=1 ); /* IE6-9 */
-}
-
-@mixin plumPlate {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#667eea+0,764ba2+100 */
-    background: rgb(102,126,234); /* Old browsers */
-    background: -moz-linear-gradient(-45deg,  rgba(102,126,234,1) 0%, rgba(118,75,162,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg,  rgba(102,126,234,1) 0%,rgba(118,75,162,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg,  rgba(102,126,234,1) 0%,rgba(118,75,162,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#667eea', endColorstr='#764ba2',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-
-}
-
-@mixin distinct {
-    background-color: #f6f9fc;
-}
-
-@mixin subtle-dropshadow {
-  -webkit-box-shadow: 0 4px 4px rgba(100, 100, 100, 0.49);
-  -moz-box-shadow:    0 4px 4px rgba(100, 100, 100, 0.49);
-  box-shadow:         0 4px 4px rgba(100, 100, 100, 0.49);
-}
 
 .dark {
     color: $dark-text;
@@ -204,6 +165,11 @@ header .logo {
     font-family: "Bariol";
     font-size: 36px;
     font-weight: bold;
+    a {
+      &:hover {
+        color: #FFF;
+      }
+    }
 }
 
 header {
@@ -440,9 +406,8 @@ header .head-nav li a {
             padding-bottom: 30px;
             .trainer {
                 position: relative;
-                background: $darker-bg;
+                @include plumPlate();
                 cursor: pointer;
-                color: $bright;
                 .info {
                     padding: 20px;
                     background-color: rgba(37,29,99,0.8);
@@ -454,6 +419,19 @@ header .head-nav li a {
                     font-style: italic;
                     opacity: 0;
                     transition: opacity 0.2s ease-in;
+                    .linkedin {
+                      display: block;
+                      img {
+                        height: 50px;
+                        padding: 8px 0;
+                      }
+                    }
+                }
+
+                .dp {
+                  width: 100%;
+                  height: 200px;
+                  background-size: cover;
                 }
 
                 &:hover {
@@ -461,24 +439,17 @@ header .head-nav li a {
                         opacity: 1;
                     }
                 }
-                & > img {
-                    display: inline-block;
-                    height: 80px;
-                    width: auto;
-                    border-radius: 100px;
-                    margin-top: 20px;
-                }
 
                 .name {
                     font-size: 20px;
                     font-weight: lighter;
-                    padding: 10px 0 5px 0;
+                    padding: 14px 0 5px 0;
                 }
 
                 .pos {
                     font-size: 15px;
                     font-weight: bold;
-                    padding: 5px 0 30px 0;
+                    padding: 5px 0 18px 0;
                 }
             }
         }
@@ -486,13 +457,17 @@ header .head-nav li a {
 
     .testimonials {
         margin: 20px auto 30px;
-    }
-
-
-    .testimonials .sliders img {
-        height: 100px;
-        border-radius: 100px;
-        float: right;
+        .person{
+          .img {
+            @include distinct();
+          }
+        }
+        .display-picture {
+          background-size: contain;
+          background-repeat: no-repeat;
+          padding-right: 5px;
+          min-height: 150px;
+        }
     }
 
     .testimonials .sliders .says {
