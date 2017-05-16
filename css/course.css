@@ -9,8 +9,8 @@
 .cplus .img-holder {
   background-image: url("/img/oops_bg.jpg"); }
 
-.cplus .img-holder.apptitude {
-  background-image: url("/assets/apptitude_bg.jpg"); }
+.aptitude .img-holder {
+  background-image: url("/img/aptitude.jpg"); }
 
 .hero-text {
   width: 50%;
@@ -268,8 +268,11 @@
   margin-top: 10px;
   line-height: 1.3; }
 
+.dark-text {
+  color: #444; }
+
 .type1.dark {
-  background: #AAABB8; }
+  background-color: #f6f9fc; }
 
 .batches {
   margin-top: 20px;
@@ -318,6 +321,8 @@
     padding: 5px 0;
     text-align: center;
     font-weight: bold; }
+    .batch .enroll:hover {
+      color: #FFF; }
 
 .batch:hover {
   border-color: #25274D; }
@@ -349,11 +354,21 @@
   text-align: left; }
 
 section .accordion-item.is-active .accordion-title, section .accordion-item:hover .accordion-title {
-  color: #2E9CCA;
-  background-color: #25274D; }
+  color: #FFF;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#667eea+0,764ba2+100 */
+  background: #667eea;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #667eea 0%, #764ba2 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #667eea 0%, #764ba2 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#667eea', endColorstr='#764ba2',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */ }
 
 section .accordion-title {
-  background-color: #AAABB8; }
+  background-color: #f6f9fc; }
 
 section .accordion-content {
   color: #25274D; }

@@ -419,7 +419,8 @@ header .head-nav li a {
       /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#667eea', endColorstr='#764ba2',GradientType=1 );
       /* IE6-9 fallback on horizontal gradient */
-      cursor: pointer; }
+      cursor: pointer;
+      color: #FFF; }
       .our-trainers .trainer-box .trainer .info {
         padding: 20px;
         background-color: rgba(37, 29, 99, 0.8);

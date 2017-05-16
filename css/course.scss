@@ -12,8 +12,9 @@
   background-image: url("/img/oops_bg.jpg");
 }
 
-.cplus .img-holder.apptitude {
-  background-image: url("/assets/apptitude_bg.jpg"); }
+.aptitude .img-holder {
+  background-image: url("/img/aptitude.jpg");
+}
 
 .hero-text {
     width: 50%;
@@ -368,8 +369,12 @@
   }
 }
 
+.dark-text {
+  color: #444;
+}
+
 .type1.dark {
-  background: $med-bg;
+  @include distinct();
 }
 
 .batches {
@@ -414,6 +419,9 @@
     padding: 5px 0;
     text-align: center;
     font-weight: bold;
+    &:hover {
+      color: #FFF;
+    }
   }
 }
 
@@ -474,12 +482,12 @@
 }
 
 section .accordion-item.is-active .accordion-title, section .accordion-item:hover .accordion-title {
-  color: $bright;
-  background-color: $darker-bg;
+  color: #FFF;
+  @include plumPlate()
 }
 
 section .accordion-title {
-  background-color: $med-bg;
+  @include distinct();
 }
 
 section .accordion-content {
