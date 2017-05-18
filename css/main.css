@@ -30,7 +30,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   line-height: 1;
-  background-color: rgba(102, 116, 103, 0.66); }
+  background-color: rgba(102, 116, 103, 0.37); }
 
 ol, ul {
   list-style: none; }
@@ -284,7 +284,8 @@ header .head-nav li a {
   width: 70%;
   margin: 100px 0 0 0;
   text-align: left;
-  border-radius: 5px; }
+  border-radius: 5px; 
+  color: #B93A32}
   .first-carousel .quote h1 {
     font-size: 70px;
     font-weight: bold;
@@ -345,12 +346,12 @@ header .head-nav li a {
 .course-info.coming-soon {
   /*margin: 100px auto 0; */}
   .course-info.coming-soon .notice {
-    border: 2px dashed #2E9CCA;
-    color: #2E9CCA;
+    border: 2px dashed #805700;
+    color: #805700;
     width: 60%;
     margin: 0 auto;
     text-align: center; }
-    .course-info.coming-soon .notice p {
+    .course-info.coming-soon .notice h2 {
       margin: 30px 10px; }
 
 .course-info .course-title {
@@ -405,7 +406,7 @@ header .head-nav li a {
   text-decoration: none; }
 
 .our-trainers {
-  background-color: #FFFFFF; }
+  background-color: rgba(102, 116, 103, 0.37); }
   .our-trainers .trainer-box {
     text-align: center;
     padding-bottom: 30px; }
@@ -449,7 +450,9 @@ header .head-nav li a {
         padding: 5px 0 18px 0; }
 
 .testimonials {
-  margin: 20px auto 30px; }
+ /* margin: 20px auto 30px;*/
+  background-color: rgba(102, 116, 103, 0.66); 
+  }
   .testimonials .person .img {
     background-color: #f6f9fc; }
   .testimonials .display-picture {
@@ -505,7 +508,8 @@ header .head-nav li a {
 
 .why-us {
   background-color: rgba(102, 116, 103, 0.66);
-  padding-top: 30px; }
+  padding-top: 30px;
+  }
   .why-us .text {
     line-height: 1.4;
     max-width: 70%; }
@@ -664,7 +668,7 @@ header .head-nav li a {
   font-style: italic; }
 
 @media screen and (max-width: 74.9375em) {
-  .first-carousel {
+  .first-carousel .slide{
     padding-left: 50px; }
     .first-carousel .quote h1 {
       font-size: 50px; } }
@@ -686,4 +690,9 @@ header .head-nav li a {
     float: none;
     text-align: center; } }
 
-
+.first-carousel .slide{
+  background-color: rgba(0, 0, 0, 0.28);
+  height:inherit;
+  max-width:100%;
+  padding-left:50px;
+}
