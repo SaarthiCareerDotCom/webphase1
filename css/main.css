@@ -29,7 +29,8 @@ footer, header, hgroup, menu, nav, section {
   display: block; }
 
 body {
-  line-height: 1; }
+  line-height: 1;
+  background-color: rgba(102, 116, 103, 0.66); }
 
 ol, ul {
   list-style: none; }
@@ -238,7 +239,7 @@ header {
 header > div {
   display: inline-block; }
 
-header .logo {
+div .logo {
   font-family: "Bariol";
   font-size: 36px;
   font-weight: bold; }
@@ -275,9 +276,9 @@ header .head-nav li a {
 
 .first-carousel {
   width: 100%;
-  background-image: url(/img/city_bg.jpg);
-  background-size: cover;
-  height: 100vh; }
+  background-image: url(/img/2.jpg);
+  background-size: 100% 75vh;
+  height: 75vh; }
 
 .first-carousel .quote {
   width: 70%;
@@ -304,18 +305,25 @@ header .head-nav li a {
   margin-bottom: 20px; }
 
 .course-know {
-  overflow: hidden; }
+  overflow: hidden; 
+  height: 50px;
+  margin-left:10px;
+  }
   .course-know .action {
     display: inline-block;
     right: 0;
     bottom: 0;
-    margin: 10px;
-    float: right; }
+    float: right; 
+    width: 45%}
   .course-know .start-date {
     display: inline-block;
-    float: left;
-    margin: 25px;
-    font-weight: bold; }
+    float: center;
+    font-weight: bold; 
+    width: 55%;
+    padding : 10px 25px;
+    margin: 10px, 0px;
+    }
+
   .course-know img {
     height: 20px;
     position: relative;
@@ -323,7 +331,10 @@ header .head-nav li a {
 
 .courses .course-text {
   padding: 10px 25px;
-  line-height: 20px; }
+  line-height: 20px;
+  height: 150px; 
+  margin: 0px 10px;
+  }
 
 .course-info {
   position: relative;
@@ -332,7 +343,7 @@ header .head-nav li a {
     background-color: rgba(0, 0, 0, 0.2); }
 
 .course-info.coming-soon {
-  margin: 100px auto 0; }
+  /*margin: 100px auto 0; */}
   .course-info.coming-soon .notice {
     border: 2px dashed #2E9CCA;
     color: #2E9CCA;
@@ -360,19 +371,11 @@ header .head-nav li a {
     font-weight: 500; }
 
 .course-info .course-description {
-  padding: 10px 0 0;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#667eea+0,764ba2+100 */
-  background: #667eea;
+  background: #B93A32;
+  height: 200px;
   /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #667eea 0%, #764ba2 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg, #667eea 0%, #764ba2 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#667eea', endColorstr='#764ba2',GradientType=1 );
-  /* IE6-9 fallback on horizontal gradient */ }
-
+}
 .course-info .course-description > ul {
   list-style: disc inside none;
   line-height: 30px;
@@ -409,16 +412,9 @@ header .head-nav li a {
     .our-trainers .trainer-box .trainer {
       position: relative;
       /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#667eea+0,764ba2+100 */
-      background: #667eea;
+      background: #B93A32;
       /* Old browsers */
-      background: -moz-linear-gradient(-45deg, #667eea 0%, #764ba2 100%);
-      /* FF3.6-15 */
-      background: -webkit-linear-gradient(-45deg, #667eea 0%, #764ba2 100%);
-      /* Chrome10-25,Safari5.1-6 */
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#667eea', endColorstr='#764ba2',GradientType=1 );
-      /* IE6-9 fallback on horizontal gradient */
+      
       cursor: pointer;
       color: #FFF; }
       .our-trainers .trainer-box .trainer .info {
@@ -508,7 +504,7 @@ header .head-nav li a {
   color: #25274D; }
 
 .why-us {
-  background-color: #f6f9fc;
+  background-color: rgba(102, 116, 103, 0.66);
   padding-top: 30px; }
   .why-us .text {
     line-height: 1.4;
@@ -648,10 +644,15 @@ header .head-nav li a {
 .grad-bg-button-dark div {
   cursor: pointer;
   padding: 7px 20px 13px;
-  background: #FFF;
-  border: 2px solid #FFF;
-  border-radius: 25px; }
+  background: #F6D155;
+  border: 2px solid #F6D155;
+  height: 50px;
+  /*border-radius: 25px;*/ }
+.grad-bg-button-dark div:hover{
+  background: #92B558;
+  border: 2px solid #92B558;
 
+}
 .grad-bg-button-dark a {
   color: #25274D;
   font-weight: bold; }
@@ -684,3 +685,5 @@ header .head-nav li a {
   .testimonial img, .testimonial .says {
     float: none;
     text-align: center; } }
+
+
