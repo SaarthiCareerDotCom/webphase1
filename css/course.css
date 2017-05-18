@@ -4,7 +4,8 @@
   height: 80vh;
   background-size: cover;
   background-position-y: 50%;
-  position: relative; }
+  position: relative;
+  text-align: center; }
 
 .cplus .img-holder {
   background-image: url("/img/oops_bg.jpg"); }

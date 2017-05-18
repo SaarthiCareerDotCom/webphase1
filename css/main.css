@@ -684,3 +684,19 @@ header .head-nav li a {
   .testimonial img, .testimonial .says {
     float: none;
     text-align: center; } }
+
+@media screen and (max-width: 39.9375em) {
+  .first-carousel {
+    padding-left: 0;
+    text-align: center; }
+    .first-carousel .quote {
+      margin: 70px auto 0;
+      text-align: center; }
+      .first-carousel .quote h1 {
+        font-size: 30px; }
+  .course-info.coming-soon .notice {
+    margin-bottom: 40px; }
+  .trainer-box > .column-block {
+    padding-bottom: 20px; }
+  #footer .links {
+    text-align: center; } }
