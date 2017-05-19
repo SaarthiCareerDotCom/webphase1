@@ -401,6 +401,9 @@ header .head-nav li a {
 
     .our-trainers {
         background-color: #FFFFFF;
+        .desc-text {
+            padding-bottom: 20px;
+        }
         .trainer-box {
             text-align: center;
             padding-bottom: 30px;
@@ -730,6 +733,7 @@ header .head-nav li a {
   }
 }
 
+// max : 1200px
 @media screen and (max-width: 74.9375em) {
   .first-carousel {
     padding-left: 50px;
@@ -739,6 +743,7 @@ header .head-nav li a {
   }
 }
 
+// min : 640px - max : 1200px
 @media only screen and (min-width: 40.063em) and (max-width: 63.9375em) {
     .why-us {
         .section-title {
@@ -770,6 +775,7 @@ header .head-nav li a {
     }
 }
 
+// max : 640px
 @media screen and (max-width: 39.9375em) {
   .first-carousel {
     padding-left: 0;

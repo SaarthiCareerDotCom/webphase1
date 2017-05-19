@@ -403,6 +403,8 @@ header .head-nav li a {
 
 .our-trainers {
   background-color: #FFFFFF; }
+  .our-trainers .desc-text {
+    padding-bottom: 20px; }
   .our-trainers .trainer-box {
     text-align: center;
     padding-bottom: 30px; }

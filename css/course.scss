@@ -6,7 +6,6 @@
     background-size: cover;
     background-position-y: 50%;
     position: relative;
-    text-align: center;
 }
 
 .cplus .img-holder {
@@ -69,6 +68,10 @@
 
 .hero-text .title {
     font-size: 40px;
+}
+
+.target-companies .desc-text {
+  padding-bottom: 20px;
 }
 
 
@@ -398,6 +401,7 @@
   display: inline-block;
   min-width: 200px;
   margin-right: 20px;
+  margin-bottom: 20px;
   @include distinct();
   border-radius: 4px;
   line-height: 1.5;
@@ -537,4 +541,21 @@ section .accordion-content {
 }
 .icon { 
   display: inline-block;
+}
+
+// max : 1200px
+@media screen and (max-width: 74.9375em) {
+  .img-holder {
+    padding-left: 50px;
+  }
+}
+
+// min : 640px - max : 1200px
+@media only screen and (min-width: 40.063em) {
+
+}
+
+// max : 640px
+@media screen and (max-width: 39.9375em) {
+
 }

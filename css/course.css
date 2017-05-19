@@ -4,8 +4,7 @@
   height: 80vh;
   background-size: cover;
   background-position-y: 50%;
-  position: relative;
-  text-align: center; }
+  position: relative; }
 
 .cplus .img-holder {
   background-image: url("/img/oops_bg.jpg"); }
@@ -52,6 +51,9 @@
 
 .hero-text .title {
   font-size: 40px; }
+
+.target-companies .desc-text {
+  padding-bottom: 20px; }
 
 .hero-text .sub-title {
   font-size: 20px;
@@ -292,6 +294,7 @@
   display: inline-block;
   min-width: 200px;
   margin-right: 20px;
+  margin-bottom: 20px;
   background-color: #f6f9fc;
   border-radius: 4px;
   line-height: 1.5;
@@ -407,3 +410,7 @@ section .accordion-content {
 
 .icon {
   display: inline-block; }
+
+@media screen and (max-width: 74.9375em) {
+  .img-holder {
+    padding-left: 50px; } }
