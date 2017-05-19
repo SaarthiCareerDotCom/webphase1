@@ -8,8 +8,10 @@ $(document).ready(function () {
 	// });
 
 	$('.sliders').slick({
-		autoplay: true,
-		autoplaySpeed: 1500
+		autoplay: false,
+		arrows: true,
+		dots: true,
+		autoplaySpeed: 8000
 	});
 
 	$('.revs').slick({
