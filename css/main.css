@@ -439,6 +439,7 @@ header .head-nav li a {
         font-size: 18px;
         font-style: italic;
         opacity: 0;
+        line-height: 1.2;
         transition: opacity 0.2s ease-in; }
         .our-trainers .trainer-box .trainer .info .linkedin {
           display: block; }
