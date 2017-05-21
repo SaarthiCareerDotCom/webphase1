@@ -588,6 +588,8 @@ header .head-nav li a {
       height: 30px;
       width: auto;
       padding: 0 8px; }
+    #footer .social-media .email, #footer .social-media .phone {
+      color: #FFF; }
   #footer .links {
     text-align: right;
     padding-top: 30px; }
@@ -676,6 +678,9 @@ header .head-nav li a {
 
 .trainer-box .column {
   margin-bottom: 20px; }
+
+.dp.center {
+  background-position: 50%; }
 
 @media screen and (max-width: 74.9375em) {
   .first-carousel {

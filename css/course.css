@@ -414,9 +414,6 @@ section .accordion-content {
 .icon {
   display: inline-block; }
 
-.dp.center {
-  background-position: 50%; }
-
 @media screen and (max-width: 74.9375em) {
   .img-holder {
     padding-left: 50px; } }

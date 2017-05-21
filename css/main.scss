@@ -638,6 +638,9 @@ header .head-nav li a {
                 width: auto;
                 padding: 0 8px;
             }
+            .email,.phone {
+                color: #FFF;
+            }
 
         }
 
@@ -747,6 +750,10 @@ header .head-nav li a {
     .column {
         margin-bottom: 20px;
     }
+}
+
+.dp.center {
+    background-position: 50%;
 }
 
 // max : 1200px
