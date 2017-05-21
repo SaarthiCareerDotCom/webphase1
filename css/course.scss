@@ -504,6 +504,10 @@ section .accordion-content {
   color: $darker-bg;
 }
 
+#signUpModal .form-show .full {
+  display: block !important;
+}
+
 .enroll-float {
   position: fixed;
   bottom: 20px;

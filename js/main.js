@@ -79,8 +79,9 @@ var registerUserModal = (function(){
 			"stream" : $('#signUpModal #stream').val(),
 			"batch" : batchSelected
 		};
-		debugger;
 		newPostRef.set(data);
+		$('.form-show').css('visibility','hidden');
+		$('.form-success').show();
 	});
 	
 	var init = function (names) {

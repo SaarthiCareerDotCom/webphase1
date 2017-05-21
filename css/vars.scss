@@ -20,6 +20,15 @@ $distinct-color : #f6f9fc;
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4facfe', endColorstr='#00f2fe',GradientType=1 ); /* IE6-9 */
 }
 
+@mixin malibu-bg-color {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4facfe+0,00f2fe+100 */
+  background-color: rgb(79,172,254); /* Old browsers */
+  background-color: -moz-linear-gradient(left, rgba(79,172,254,1) 0%, rgba(0,242,254,1) 100%); /* FF3.6-15 */
+  background-color: -webkit-linear-gradient(left, rgba(79,172,254,1) 0%,rgba(0,242,254,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background-color: linear-gradient(to right, rgba(79,172,254,1) 0%,rgba(0,242,254,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4facfe', endColorstr='#00f2fe',GradientType=1 ); /* IE6-9 */
+}
+
 @mixin plumPlate {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#667eea+0,764ba2+100 */
   background: rgb(102,126,234); /* Old browsers */

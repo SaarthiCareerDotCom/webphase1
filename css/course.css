@@ -381,6 +381,9 @@ section .accordion-title {
 section .accordion-content {
   color: #25274D; }
 
+#signUpModal .form-show .full {
+  display: block !important; }
+
 .enroll-float {
   position: fixed;
   bottom: 20px;
