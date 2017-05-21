@@ -673,6 +673,9 @@ header .head-nav li a {
 .contact-info .email, .contact-info .phone {
   font-style: italic; }
 
+.trainer-box .column {
+  margin-bottom: 20px; }
+
 @media screen and (max-width: 74.9375em) {
   .first-carousel {
     padding-left: 50px; }
@@ -690,8 +693,6 @@ header .head-nav li a {
   .answers {
     display: inline-block;
     text-align: center; }
-  .trainer-box .column {
-    margin-bottom: 20px; }
   .testimonial img, .testimonial .says {
     float: none;
     text-align: center; } }

@@ -742,6 +742,12 @@ header .head-nav li a {
   }
 }
 
+.trainer-box {
+    .column {
+        margin-bottom: 20px;
+    }
+}
+
 // max : 1200px
 @media screen and (max-width: 74.9375em) {
   .first-carousel {
@@ -769,11 +775,6 @@ header .head-nav li a {
     .answers {
         display: inline-block;
         text-align: center;
-    }
-    .trainer-box {
-        .column {
-            margin-bottom: 20px;
-        }
     }
 
     .testimonial  {
