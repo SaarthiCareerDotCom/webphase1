@@ -547,6 +547,10 @@ section .accordion-content {
   display: inline-block;
 }
 
+.dp.center {
+  background-position: 50%;
+}
+
 // max : 1200px
 @media screen and (max-width: 74.9375em) {
   .img-holder {
@@ -561,5 +565,7 @@ section .accordion-content {
 
 // max : 640px
 @media screen and (max-width: 39.9375em) {
-
+  .hero-text {
+    position: relative;
+  }
 }
