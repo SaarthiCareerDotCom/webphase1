@@ -64,6 +64,7 @@ $(document).ready(function () {
 	}
 
 	matchHeights($('.trainer'));
+	matchHeights($('.course-info .course-description'));
 	matchHeights($('.icons .column-block > .row'));
 });
 
