@@ -262,14 +262,6 @@ header .head-nav li a {
     //    background-position: center center;
     //}
 
-    .first-carousel .slide-2 {
-        background-image: url("../assets/slide-2.jpg");
-    }
-
-    .first-carousel .slide-3 {
-        background-image: url("../assets/slide-3.jpg");
-    }
-
     //.courses {
     //    max-width: 1024px;
     //    margin: 40px auto 0;
@@ -816,5 +808,18 @@ header .head-nav li a {
   }
   #footer .links {
     text-align: center;
+  }
+  .course-know {
+      position: relative;
+      text-align: center;
+      .start-date {
+        float: none;
+        display: block;
+        margin: 10px 40px
+      }
+      .action {
+        float: none;
+        margin: 10px 25px 20px;
+      }
   }
 }

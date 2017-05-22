@@ -48,6 +48,23 @@ $(document).ready(function () {
 			});
 		}
 	})
+
+	function matchHeights(elements){
+		if(Array.isArray(elements) && elements.length === 0) {
+			return;
+		}
+		var max = 0;
+		for(var i=0,j=elements.length,height=0; i<j; i++) {
+			height = parseFloat(elements.eq(i).css('height'));
+			if(height > max) {
+				max = height;
+			}
+		}
+		elements.css('height',max+'px');
+	}
+
+	matchHeights($('.trainer'));
+	matchHeights($('.icons .column-block > .row'));
 });
 
 var registerUserModal = (function(){
