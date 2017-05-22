@@ -783,6 +783,19 @@ header .head-nav li a {
             text-align: center;
         }
     }
+    .course-know {
+        position: relative;
+        text-align: center;
+        .start-date {
+            float: none;
+            display: block;
+            margin: 10px 40px
+        }
+        .action {
+            float: none;
+            margin: 10px 25px 20px;
+        }
+    }
 }
 
 // max : 640px
@@ -809,17 +822,17 @@ header .head-nav li a {
   #footer .links {
     text-align: center;
   }
-  .course-know {
-      position: relative;
-      text-align: center;
-      .start-date {
-        float: none;
-        display: block;
-        margin: 10px 40px
-      }
-      .action {
-        float: none;
-        margin: 10px 25px 20px;
-      }
-  }
+    .course-know {
+        position: relative;
+        text-align: center;
+        .start-date {
+            float: none;
+            display: block;
+            margin: 10px 40px
+        }
+        .action {
+            float: none;
+            margin: 10px 25px 20px;
+        }
+    }
 }

@@ -416,7 +416,9 @@ section .accordion-content {
 
 @media screen and (max-width: 74.9375em) {
   .img-holder {
-    padding-left: 50px; } }
+    padding-left: 50px; }
+  .hero-text {
+    width: 70%; } }
 
 @media screen and (max-width: 39.9375em) {
   .hero-text {
@@ -427,4 +429,8 @@ section .accordion-content {
     width: 70%; }
   .img-holder {
     padding: 0;
-    text-align: center; } }
+    text-align: center; }
+  .batches {
+    text-align: center; }
+  .hero-text .facts {
+    line-height: 1.5; } }

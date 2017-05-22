@@ -695,7 +695,17 @@ header .head-nav li a {
     text-align: center; }
   .testimonial img, .testimonial .says {
     float: none;
-    text-align: center; } }
+    text-align: center; }
+  .course-know {
+    position: relative;
+    text-align: center; }
+    .course-know .start-date {
+      float: none;
+      display: block;
+      margin: 10px 40px; }
+    .course-know .action {
+      float: none;
+      margin: 10px 25px 20px; } }
 
 @media screen and (max-width: 39.9375em) {
   .first-carousel {
