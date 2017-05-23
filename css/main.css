@@ -281,7 +281,6 @@ nav {
       font-size: 25px; }
   .first-carousel .down-indicate {
     position: absolute;
-    bottom: 0;
     width: 100%;
     text-align: center;
     display: block; }
