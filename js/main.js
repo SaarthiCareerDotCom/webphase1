@@ -63,24 +63,42 @@ $(document).ready(function () {
 		elements.css('height',max+'px');
 	}
 
+	setTimeout(function () {
+		showPromotionPopup();
+	}, 7000);
+
+	//
+	// (function () {
+	// 	var used = false;
+	// 	var element = $('#team')[0];
+	//
+	//
+	// 	$(document).scroll(function(){
+	// 		if(!used && element.getBoundingClientRect() < 0) {
+	// 			used = true;
+	// 			showPromotionPopup()
+	// 		}
+	// 	})
+	// })();
+
 	matchHeights($('.trainer'));
 	matchHeights($('.course-info .course-description'));
 	matchHeights($('.icons .column-block > .row'));
 });
 
+// Initialize Firebase
+var config = {
+	apiKey: "AIzaSyCzZadP-90PJzNIfjUfesek8V-Q1OBucPs",
+	authDomain: "saarthi-career.firebaseapp.com",
+	databaseURL: "https://saarthi-career.firebaseio.com",
+	projectId: "saarthi-career",
+	storageBucket: "saarthi-career.appspot.com",
+	messagingSenderId: "525172349655"
+};
+firebase.initializeApp(config);
+
 var registerUserModal = (function(){
 
-	// Initialize Firebase
-	var config = {
-		apiKey: "AIzaSyCzZadP-90PJzNIfjUfesek8V-Q1OBucPs",
-		authDomain: "saarthi-career.firebaseapp.com",
-		databaseURL: "https://saarthi-career.firebaseio.com",
-		projectId: "saarthi-career",
-		storageBucket: "saarthi-career.appspot.com",
-		messagingSenderId: "525172349655"
-	};
-	firebase.initializeApp(config);
-	var database = firebase.database();
 	var newPostRef = firebase.database().ref('interestedPeople').push();
 
 
@@ -108,7 +126,50 @@ var registerUserModal = (function(){
 		$('#signUpModal input').val('');
 		$('#signUpModal .message>span').text(names.courseName);
 		$('#signUpModal').removeClass('submitted');
-	}
+	};
 
 	return init;
+})();
+
+var showPromotionPopup = (function () {
+
+	var open = false;
+
+	function openModal() {
+		if (!open) {
+			open = true;
+			var formPopup = new Foundation.Reveal($('#freePdf'));
+			formPopup.open();
+
+			$('.step-1 .form-button').on('click', function () {
+				$('.step').hide();
+				$('.step-2').show();
+			});
+
+			$('.step-2 .form-button').on('click', function () {
+				$('.step').hide();
+				$('.step-3').show();
+
+				data = {
+					"name" : $('#freeName').val(),
+					"email" : $('#freeEmail').val(),
+					"interests" : (function () {
+						var options = $('.step-2 label');
+						var interests = [];
+						for(var i=0, j=options.length; i<j; i++) {
+							if(options.eq(i).find('input').is(':checked')) {
+								interests.push(options.eq(i).text().trim());
+							}
+						}
+						return interests
+					})()
+				};
+				debugger;
+				var signUp = firebase.database().ref('signUp').push();
+				signUp.set(data);
+			});
+		}
+	}
+
+	return openModal;
 })();

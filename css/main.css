@@ -281,22 +281,19 @@ nav {
       font-size: 25px; }
   .first-carousel .down-indicate {
     position: absolute;
+    bottom: 20%;
     width: 100%;
     text-align: center;
-    display: block;
-    bottom: 20%; }
-
-    /* Nikesh: No longer used, if we are using font-awesome
+    display: block; }
     .first-carousel .down-indicate img {
       height: 50px;
       background: white;
-      margin: 10px; 
+      /* margin: 10px; */
       display: block;
       margin: 0 auto;
       padding: 8px;
-      border-radius: 40px 40px 0 0;
-      bottom: 100px }
-    */
+      border-radius: 40px 40px 0 0; }
+
 .courses {
   margin-top: 20px; }
 
@@ -621,6 +618,23 @@ nav {
       #footer .links a:hover {
         color: #FFF; }
 
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("/vendor/font-awesome/fonts/fontawesome-webfont.eot?v=4.6.3");
+  src: url("/vendor/font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.6.3") format("embedded-opentype"), url("/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3") format("woff2"), url("/vendor/font-awesome/fonts/fontawesome-webfont.woff?v=4.6.3") format("woff"), url("/vendor/font-awesome/fonts/fontawesome-webfont.ttf?v=4.6.3") format("truetype"), url("/vendor/font-awesome/fonts/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+.fa-angle-double-down:before {
+  content: "\f103"; }
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased; }
+
 .course-info .image {
   width: 100%;
   height: 250px;
@@ -704,6 +718,71 @@ nav {
 
 .dp.center {
   background-position: 50%; }
+
+#freePdf {
+  border: 0;
+  line-height: 1.4;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#667eea+0,764ba2+100 */
+  background: #667eea;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #667eea 0%, #764ba2 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #667eea 0%, #764ba2 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#667eea', endColorstr='#764ba2',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */ }
+  #freePdf .inner {
+    background-color: #FFF; }
+    #freePdf .inner h1 {
+      font-size: 35px;
+      padding: 15px 15px 7px;
+      text-align: center;
+      font-weight: bold; }
+    #freePdf .inner h2 {
+      font-size: 20px;
+      padding: 0 15px 7px;
+      font-weight: bold;
+      text-align: center; }
+    #freePdf .inner .image {
+      padding: 0; }
+    #freePdf .inner .content {
+      padding: 4px 0 15px; }
+      #freePdf .inner .content ul {
+        list-style-type: square;
+        list-style-position: inside; }
+    #freePdf .inner .step-1, #freePdf .inner .step-2, #freePdf .inner .step-3 {
+      padding-bottom: 20px;
+      padding: 0 15px 7px; }
+    #freePdf .inner .step-2, #freePdf .inner .step-3 {
+      display: none; }
+    #freePdf .inner .form-button {
+      text-align: center;
+      cursor: pointer; }
+      #freePdf .inner .form-button > div {
+        padding: 7px 10px;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#667eea+0,764ba2+100 */
+        background: #667eea;
+        /* Old browsers */
+        background: -moz-linear-gradient(-45deg, #667eea 0%, #764ba2 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(-45deg, #667eea 0%, #764ba2 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#667eea', endColorstr='#764ba2',GradientType=1 );
+        /* IE6-9 fallback on horizontal gradient */
+        color: #FFF;
+        font-weight: bold;
+        display: inline-block;
+        min-width: 15%;
+        border-radius: 40px; }
+    #freePdf .inner .options {
+      padding-top: 10px; }
+  #freePdf .close-button {
+    right: 1.5rem;
+    top: 1rem; }
 
 @media screen and (max-width: 74.9375em) {
   .first-carousel {
