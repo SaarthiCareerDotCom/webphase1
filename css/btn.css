@@ -3,7 +3,7 @@
   height: 70px;
   margin-top: 15px;
   padding: 7px 16px;
-  border: 4px solid white;
+  border: 2px solid white;
   border-radius: 100% !important;
   font-size: 40px;
   color: white;
@@ -19,13 +19,13 @@
   color: white;
   background: rgba(255, 255, 255, 0.1);
 }
-.btn-circle:hover i.animated {
+.btn-circle i.animated {
   -webkit-transition-property: -webkit-transform;
   -webkit-transition-duration: 1s;
   -moz-transition-property: -moz-transform;
   -moz-transition-duration: 1s;
 }
-.btn-circle i.animated {
+.btn-circle:hover i.animated {
   -webkit-animation-name: pulse;
   -moz-animation-name: pulse;
   -webkit-animation-duration: 1.5s;
