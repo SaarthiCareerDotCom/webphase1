@@ -65,7 +65,7 @@ $(document).ready(function () {
 
 	setTimeout(function () {
 		showPromotionPopup();
-	}, 7000);
+	}, 1000);
 
 	//
 	// (function () {
@@ -144,27 +144,11 @@ var showPromotionPopup = (function () {
 			$('.step-1 .form-button').on('click', function () {
 				$('.step').hide();
 				$('.step-2').show();
-			});
-
-			$('.step-2 .form-button').on('click', function () {
-				$('.step').hide();
-				$('.step-3').show();
 
 				data = {
-					"name" : $('#freeName').val(),
 					"email" : $('#freeEmail').val(),
-					"interests" : (function () {
-						var options = $('.step-2 label');
-						var interests = [];
-						for(var i=0, j=options.length; i<j; i++) {
-							if(options.eq(i).find('input').is(':checked')) {
-								interests.push(options.eq(i).text().trim());
-							}
-						}
-						return interests
-					})()
 				};
-				debugger;
+
 				var signUp = firebase.database().ref('signUp').push();
 				signUp.set(data);
 			});

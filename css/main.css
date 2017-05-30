@@ -720,45 +720,45 @@ nav {
   background-position: 50%; }
 
 #freePdf {
+  width: 70%;
+  padding: 0;
   border: 0;
-  line-height: 1.4;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#667eea+0,764ba2+100 */
-  background: #667eea;
-  /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #667eea 0%, #764ba2 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg, #667eea 0%, #764ba2 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#667eea', endColorstr='#764ba2',GradientType=1 );
-  /* IE6-9 fallback on horizontal gradient */ }
+  line-height: 1.4; }
+  #freePdf .image {
+    min-height: 400px;
+    background: url(/img/free_book.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%; }
+  #freePdf input {
+    margin-bottom: 0;
+    margin-top: 10px; }
   #freePdf .inner {
     background-color: #FFF; }
     #freePdf .inner h1 {
       font-size: 35px;
-      padding: 15px 15px 7px;
-      text-align: center;
+      padding: 15px 30px 7px;
       font-weight: bold; }
     #freePdf .inner h2 {
       font-size: 20px;
-      padding: 0 15px 7px;
-      font-weight: bold;
-      text-align: center; }
+      padding: 0 30px 7px;
+      font-weight: bold; }
     #freePdf .inner .image {
       padding: 0; }
+    #freePdf .inner .promise {
+      font-size: 12px;
+      color: #777; }
     #freePdf .inner .content {
       padding: 4px 0 15px; }
       #freePdf .inner .content ul {
         list-style-type: square;
         list-style-position: inside; }
-    #freePdf .inner .step-1, #freePdf .inner .step-2, #freePdf .inner .step-3 {
-      padding-bottom: 20px;
-      padding: 0 15px 7px; }
-    #freePdf .inner .step-2, #freePdf .inner .step-3 {
-      display: none; }
+    #freePdf .inner .step-1 .row, #freePdf .inner .step-2 .row {
+      padding: 0 30px 20px; }
+    #freePdf .inner .step-2 {
+      display: none;
+      font-weight: 100; }
     #freePdf .inner .form-button {
-      text-align: center;
       cursor: pointer; }
       #freePdf .inner .form-button > div {
         padding: 7px 10px;
@@ -776,8 +776,7 @@ nav {
         color: #FFF;
         font-weight: bold;
         display: inline-block;
-        min-width: 15%;
-        border-radius: 40px; }
+        min-width: 15%; }
     #freePdf .inner .options {
       padding-top: 10px; }
   #freePdf .close-button {
@@ -804,6 +803,8 @@ nav {
   .testimonial img, .testimonial .says {
     float: none;
     text-align: center; }
+  #freePdf .image {
+    min-height: 200px; }
   .course-know {
     position: relative;
     text-align: center; }
@@ -846,4 +847,9 @@ nav {
   .testimonials .person .column {
     padding-left: 0; }
   .main-nav {
-    display: none !important; } }
+    display: none !important; }
+  #freePdf .image {
+    min-height: 200px; }
+  #freePdf {
+    width: 85%;
+    margin: 0 auto; } }
