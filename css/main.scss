@@ -797,7 +797,20 @@ nav {
     background-position: 50%;
 }
 
-#freePdf {
+section.offer {
+    width: 100%;
+    background-color: #f6f9fc;
+    .inner {
+        background-color: inherit;
+    }
+    .step-1 {
+        input {
+            max-width: 50%;
+        }
+    }
+}
+
+.offer {
     width: 70%;
     padding: 0;
     border: 0;
@@ -976,5 +989,13 @@ nav {
     #freePdf {
         width: 85%;
         margin: 0 auto;
+    }
+    section.offer {
+        width: 100%;
+        .step-1 {
+            input {
+                max-width: 100%;
+            }
+        }
     }
 }

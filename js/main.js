@@ -133,22 +133,25 @@ var registerUserModal = (function(){
 
 var showPromotionPopup = (function () {
 
-	return;
-
 	var open = false;
+
+	if($('#freePdf').length === 0 || !!localStorage.viewModal) {
+		return function () {};
+	}
 
 	function openModal() {
 		if (!open) {
 			open = true;
+			localStorage.setItem('viewModal', true);
 			var formPopup = new Foundation.Reveal($('#freePdf'));
 			formPopup.open();
 
-			$('.step-1 .form-button').on('click', function () {
+			$('.step-1 .form-button').on('click', function (e) {
 				$('.step').hide();
 				$('.step-2').show();
 
 				data = {
-					"email" : $('#freeEmail').val(),
+					"email" : $(this).parent('.offer').find('.freeEmail').val()
 				};
 
 				var signUp = firebase.database().ref('signUp').push();
