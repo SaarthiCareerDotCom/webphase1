@@ -65,7 +65,7 @@ $(document).ready(function () {
 
 	setTimeout(function () {
 		showPromotionPopup();
-	}, 1000);
+	}, 7000);
 
 	//
 	// (function () {
