@@ -97,6 +97,18 @@ var config = {
 };
 firebase.initializeApp(config);
 
+$('.step-1 .form-button').on('click', function (e) {
+    $('.step').hide();
+    $('.step-2').show();
+
+    data = {
+        "email" : $(this).parents('.offer').find('.freeEmail').val()
+    };
+
+    var signUp = firebase.database().ref('signUp').push();
+    signUp.set(data);
+});
+
 var registerUserModal = (function(){
 
 	var newPostRef = firebase.database().ref('interestedPeople').push();
@@ -145,18 +157,6 @@ var showPromotionPopup = (function () {
 			localStorage.setItem('viewModal', true);
 			var formPopup = new Foundation.Reveal($('#freePdf'));
 			formPopup.open();
-
-			$('.step-1 .form-button').on('click', function (e) {
-				$('.step').hide();
-				$('.step-2').show();
-
-				data = {
-					"email" : $(this).parent('.offer').find('.freeEmail').val()
-				};
-
-				var signUp = firebase.database().ref('signUp').push();
-				signUp.set(data);
-			});
 		}
 	}
 
