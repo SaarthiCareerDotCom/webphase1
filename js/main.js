@@ -133,6 +133,8 @@ var registerUserModal = (function(){
 
 var showPromotionPopup = (function () {
 
+	return;
+
 	var open = false;
 
 	function openModal() {
