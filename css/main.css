@@ -896,6 +896,16 @@ section.offer {
   .date-picker-wrapper table tfoot, .date-picker-wrapper table thead, .date-picker-wrapper table tr, .date-picker-wrapper table tbody {
     background: #FFF !important;
     border: none; }
+  .date-picker-wrapper .day.valid {
+    background-color: #dae9f9; }
+  .date-picker-wrapper .day.valid.endpoints {
+    background-color: #25274D;
+    color: white !important;
+    font-weight: bold; }
+  .date-picker-wrapper .day.valid.special-date {
+    background-color: #2E9CCA;
+    color: white !important;
+    font-weight: bold; }
 
 .date-picker-wrapper.inline-wrapper {
   position: relative;

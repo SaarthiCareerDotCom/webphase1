@@ -63,51 +63,71 @@ $(document).ready(function () {
 		elements.css('height',max+'px');
 	}
 
+	function getDateString(t) {
+		if(t instanceof Date) {
+			return [t.getUTCFullYear(), ("0" + (t.getUTCMonth() + 1)).slice(-2), ("0" + t.getDate()).slice(-2)].join('-');
+		}	else {
+			return null;
+		}
+	}
+
 	setTimeout(function () {
 		showPromotionPopup();
 	}, 7000);
 
-	//
-	// (function () {
-	// 	var used = false;
-	// 	var element = $('#team')[0];
-	//
-	//
-	// 	$(document).scroll(function(){
-	// 		if(!used && element.getBoundingClientRect() < 0) {
-	// 			used = true;
-	// 			showPromotionPopup()
-	// 		}
-	// 	})
-	// })();
 
 	matchHeights($('.trainer'));
 	matchHeights($('.course-info .course-description'));
 	matchHeights($('.icons .column-block > .row'));
 
-    $('#timings').dateRangePicker(
-        {
-            startDate : '2017-08-02',
-            endDate: '2017-09-15',
-            stickyMonths: true,
-            // getValue: function()
-            // {
-            //     return this.innerHTML;
-            // },
-            // setValue: function(s)
-            // {
-            //     this.innerHTML = s;
-            // },
-            beforeShowDay: function(t)
-            {
-                var valid = (t.getDay() == 0 || t.getDay() == 6);  //disable saturday and sunday
-                var _class = 'abcdef';
-                var _tooltip = valid ? '' : 'weekends are disabled';
-                return [true,_class,'class today'];
+    function initCalendar () {
+        if(typeof dataVar === 'undefined') {
+            setTimeout(initCalendar, 3000);
+            return;
+		}
+
+        $('.timings').each(function (cal) {
+            var name = $(this).parents('.batch').attr('id');
+            var data = dataVar[name + '_dates'];
+            if(!data) {
+                console.log('no data');
+                return;
             }
-        }
-    )
+
+            $(this).dateRangePicker(
+                {
+                    startDate : data.startDate,
+                    endDate: data.endDate,
+                    stickyMonths: true,
+                    beforeShowDay: function(t)
+                    {
+                        var date = getDateString(t);
+                        var _class = '';
+                        var _tooltip = '';
+                        if(date === data.startDate || date === data.endDate) {
+                            _class = 'endpoints'
+                        }
+
+                        if(data.specialDates[date]) {
+                        	if(!_class) {
+                        		_class = "special-date"
+							}
+                            _tooltip = data.specialDates[date];
+                        }
+
+                        return [true,_class,_tooltip];
+                    }
+                }
+            )
+
+        })
+    }
+
+    initCalendar();
+
 });
+
+
 
 // Initialize Firebase
 var config = {

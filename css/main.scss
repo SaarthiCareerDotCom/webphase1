@@ -799,7 +799,7 @@ nav {
 
 section.offer {
     width: 100%;
-    background-color: #f6f9fc;
+    background-color: $distinct-color;
     .inner {
         background-color: inherit;
     }
@@ -1023,7 +1023,7 @@ section.offer {
     position: absolute;
     z-index: 1;
     //border: 1px solid #bfbfbf;
-    background-color: #f6f9fc;
+    background-color: $distinct-color;
     padding: 5px 12px;
     font-size: 12px;
     line-height: 20px;
@@ -1036,6 +1036,19 @@ section.offer {
             background: #FFF !important;
             border: none;
         }
+    }
+    .day.valid {
+        background-color: $dark-distinct;
+    }
+    .day.valid.endpoints {
+        background-color: $darker-bg;
+        color: white !important;
+        font-weight: bold;
+    }
+    .day.valid.special-date {
+        background-color: $bright;
+        color: white !important;
+        font-weight: bold;
     }
 }
 
@@ -1380,7 +1393,7 @@ section.offer {
     margin-left: -8px;
     box-shadow: 0 0 3px rgba(0, 0, 0, .3);
     display: none;
-    background-color: #f6f9fc;
+    background-color: $distinct-color;
     color: #25274d;
     padding: 0 6px;
     border-radius: 2px;
@@ -1398,7 +1411,7 @@ section.offer {
     position: absolute;
     border-left: 4px solid transparent;
     border-right: 4px solid transparent;
-    border-top: 4px solid #f6f9fc;
+    border-top: 4px solid $distinct-color;
     left: 50%;
     margin-left: -4px;
     bottom: -4px;
