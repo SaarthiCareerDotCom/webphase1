@@ -405,7 +405,6 @@
   @include distinct();
   border-radius: 4px;
   line-height: 1.5;
-  cursor: pointer;
   border-width: 3px 3px 0;
   border-style: solid;
   border-color: $distinct-color;
@@ -429,10 +428,17 @@
     padding: 5px 0;
     text-align: center;
     font-weight: bold;
+    cursor: pointer;
     &:hover {
       color: #FFF;
     }
   }
+}
+
+.timings {
+  font-style: italic;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .batch:hover {

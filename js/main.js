@@ -20,8 +20,8 @@ $(document).ready(function () {
 		autoplaySpeed: 8000
 	});
 
-	$('.batch').on('click', function() {
-		var name = $(this).attr('id');
+	$('.batch .enroll').on('click', function() {
+		var name = $(this).parents('.batch').attr('id');
 		if( dataVar[ name + '_active']) {
 			if( dataVar[ name + '_paymentURL' ] ) {
 				window.location = dataVar[ name + '_paymentURL' ];
@@ -84,6 +84,29 @@ $(document).ready(function () {
 	matchHeights($('.trainer'));
 	matchHeights($('.course-info .course-description'));
 	matchHeights($('.icons .column-block > .row'));
+
+    $('#timings').dateRangePicker(
+        {
+            startDate : '2017-08-02',
+            endDate: '2017-09-15',
+            stickyMonths: true,
+            // getValue: function()
+            // {
+            //     return this.innerHTML;
+            // },
+            // setValue: function(s)
+            // {
+            //     this.innerHTML = s;
+            // },
+            beforeShowDay: function(t)
+            {
+                var valid = (t.getDay() == 0 || t.getDay() == 6);  //disable saturday and sunday
+                var _class = 'abcdef';
+                var _tooltip = valid ? '' : 'weekends are disabled';
+                return [true,_class,'class today'];
+            }
+        }
+    )
 });
 
 // Initialize Firebase

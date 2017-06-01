@@ -298,7 +298,6 @@
   background-color: #f6f9fc;
   border-radius: 4px;
   line-height: 1.5;
-  cursor: pointer;
   border-width: 3px 3px 0;
   border-style: solid;
   border-color: #f6f9fc; }
@@ -328,9 +327,15 @@
     /* IE6-9 fallback on horizontal gradient */
     padding: 5px 0;
     text-align: center;
-    font-weight: bold; }
+    font-weight: bold;
+    cursor: pointer; }
     .batch .enroll:hover {
       color: #FFF; }
+
+.timings {
+  font-style: italic;
+  text-decoration: underline;
+  cursor: pointer; }
 
 .batch:hover {
   border-color: #25274D; }
