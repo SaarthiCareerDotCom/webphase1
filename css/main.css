@@ -333,7 +333,7 @@ nav {
     background-color: rgba(0, 0, 0, 0.2); }
 
 .course-info.coming-soon {
-  margin: 100px auto 0; }
+  margin: 50px auto 50px; }
   .course-info.coming-soon .notice {
     border: 2px dashed #2E9CCA;
     color: #2E9CCA;
