@@ -20,8 +20,8 @@ $(document).ready(function () {
 		autoplaySpeed: 8000
 	});
 
-	$('.batch').on('click', function() {
-		var name = $(this).attr('id');
+	$('.batch .enroll').on('click', function() {
+		var name = $(this).parents('.batch').attr('id');
 		if( dataVar[ name + '_active']) {
 			if( dataVar[ name + '_paymentURL' ] ) {
 				window.location = dataVar[ name + '_paymentURL' ];
@@ -63,28 +63,71 @@ $(document).ready(function () {
 		elements.css('height',max+'px');
 	}
 
+	function getDateString(t) {
+		if(t instanceof Date) {
+			return [t.getUTCFullYear(), ("0" + (t.getUTCMonth() + 1)).slice(-2), ("0" + t.getDate()).slice(-2)].join('-');
+		}	else {
+			return null;
+		}
+	}
+
 	setTimeout(function () {
 		showPromotionPopup();
 	}, 7000);
 
-	//
-	// (function () {
-	// 	var used = false;
-	// 	var element = $('#team')[0];
-	//
-	//
-	// 	$(document).scroll(function(){
-	// 		if(!used && element.getBoundingClientRect() < 0) {
-	// 			used = true;
-	// 			showPromotionPopup()
-	// 		}
-	// 	})
-	// })();
 
 	matchHeights($('.trainer'));
 	matchHeights($('.course-info .course-description'));
 	matchHeights($('.icons .column-block > .row'));
+
+    function initCalendar () {
+        if(typeof dataVar === 'undefined') {
+            setTimeout(initCalendar, 3000);
+            return;
+		}
+
+        $('.timings').each(function (cal) {
+            var name = $(this).parents('.batch').attr('id');
+            var data = dataVar[name + '_dates'];
+            if(!data) {
+                console.log('no data');
+                return;
+            }
+
+            $(this).dateRangePicker(
+                {
+                    startDate : data.startDate,
+                    endDate: data.endDate,
+                    stickyMonths: true,
+                    beforeShowDay: function(t)
+                    {
+                        var date = getDateString(t);
+                        var _class = '';
+                        var _tooltip = '';
+                        if(date === data.startDate || date === data.endDate) {
+                            _class = 'endpoints'
+                        }
+
+                        if(data.specialDates[date]) {
+                        	if(!_class) {
+                        		_class = "special-date"
+							}
+                            _tooltip = data.specialDates[date];
+                        }
+
+                        return [true,_class,_tooltip];
+                    }
+                }
+            )
+
+        })
+    }
+
+    initCalendar();
+
 });
+
+
 
 // Initialize Firebase
 var config = {
@@ -148,8 +191,9 @@ var showPromotionPopup = (function () {
 	var open = false;
 
 	if($('#freePdf').length === 0 || !!localStorage.viewModal) {
-		return function () {};
-	}
+		var a = function () {};
+        return a;
+    }
 
 	function openModal() {
 		if (!open) {
