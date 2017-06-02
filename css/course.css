@@ -332,6 +332,10 @@
     .batch .enroll:hover {
       color: #FFF; }
 
+.yt-embed {
+  width: 100%;
+  min-height: 250px; }
+
 .timings {
   text-decoration: underline;
   cursor: pointer;
