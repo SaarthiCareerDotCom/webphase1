@@ -436,9 +436,10 @@
 }
 
 .timings {
-  font-style: italic;
   text-decoration: underline;
   cursor: pointer;
+  color: #1a0dab;
+  font-weight: 400;
 }
 
 .batch:hover {

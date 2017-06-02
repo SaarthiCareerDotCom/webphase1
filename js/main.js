@@ -191,8 +191,9 @@ var showPromotionPopup = (function () {
 	var open = false;
 
 	if($('#freePdf').length === 0 || !!localStorage.viewModal) {
-		return function () {};
-	}
+		var a = function () {};
+        return a;
+    }
 
 	function openModal() {
 		if (!open) {

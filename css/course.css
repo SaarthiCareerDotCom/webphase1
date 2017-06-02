@@ -333,9 +333,10 @@
       color: #FFF; }
 
 .timings {
-  font-style: italic;
   text-decoration: underline;
-  cursor: pointer; }
+  cursor: pointer;
+  color: #1a0dab;
+  font-weight: 400; }
 
 .batch:hover {
   border-color: #25274D; }
