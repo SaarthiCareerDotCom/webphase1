@@ -711,13 +711,17 @@ nav {
     background-image: url("/img/computer-cplus.jpg");
 }
 
-.course-info.data .image {
-    background-image: url("/img/data.jpg");
+.course-info.software .image {
+    background-image: url("/img/software-interview.jpg");
 }
 
 .course-info.analytics .image {
     background-image: url("/img/analytics.jpg");
 }
+
+.course-info.hardware .image {
+  background-image: url("/img/hardware-interview.png"); }
+
 
 #signUpModal {
     .message {
