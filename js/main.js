@@ -141,15 +141,18 @@ var config = {
 firebase.initializeApp(config);
 
 $('.step-1 .form-button').on('click', function (e) {
-    $('.step').hide();
-    $('.step-2').show();
 
-    data = {
-        "email" : $(this).parents('.offer').find('.freeEmail').val()
-    };
-
-    var signUp = firebase.database().ref('signUp').push();
-    signUp.set(data);
+	var email = $(this).parents('.offer').find('.freeEmail').val();
+	if(email != null && email.length > 0 ) {
+		$('.step').hide();
+    	$('.step-2').show();
+    	data = {
+        	"email" : email
+    	};
+		
+		var signUp = firebase.database().ref('signUp').push();
+    	signUp.set(data);
+	}
 });
 
 var registerUserModal = (function(){
