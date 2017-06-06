@@ -65,7 +65,7 @@ $(document).ready(function () {
 
 	function getDateString(t) {
 		if(t instanceof Date) {
-			return [t.getUTCFullYear(), ("0" + (t.getUTCMonth() + 1)).slice(-2), ("0" + t.getDate()).slice(-2)].join('-');
+			return [t.getFullYear(), ("0" + (t.getMonth() + 1)).slice(-2), ("0" + t.getDate()).slice(-2)].join('-');
 		}	else {
 			return null;
 		}
