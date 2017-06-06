@@ -140,10 +140,15 @@ var config = {
 };
 firebase.initializeApp(config);
 
+function validateEmail(email) {
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+}
+
 $('.step-1 .form-button').on('click', function (e) {
 
-	var email = $(this).parents('.offer').find('.freeEmail').val();
-	if(email != null && email.length > 0 ) {
+	var email = $(this).parents('.offer').find('.freeEmail').val().trim();
+	if(email != null && email.length > 0 && validateEmail(email)) {
 		$('.step').hide();
     	$('.step-2').show();
     	data = {
@@ -152,6 +157,8 @@ $('.step-1 .form-button').on('click', function (e) {
 		
 		var signUp = firebase.database().ref('signUp').push();
     	signUp.set(data);
+	}	else {
+		$(this).parents('.offer').find('.check-email').show();
 	}
 });
 

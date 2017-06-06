@@ -325,7 +325,7 @@ nav {
         }
     }
     .course-info.coming-soon {
-        margin: 100px auto 0;
+        margin: 100px auto 30px;
         .notice {
             border: 2px dashed $bright;
             color: $bright;
@@ -845,9 +845,13 @@ section.offer {
         .image {
             padding: 0;
         }
-        .promise {
+        .small-text {
             font-size: 12px;
             color: #777;
+        }
+        .small-text.check-email {
+            display: none;
+            color: red;
         }
         .content {
             padding: 4px 0 15px;

@@ -333,7 +333,7 @@ nav {
     background-color: rgba(0, 0, 0, 0.2); }
 
 .course-info.coming-soon {
-  margin: 50px auto 50px; }
+  margin: 100px auto 30px; }
   .course-info.coming-soon .notice {
     border: 2px dashed #2E9CCA;
     color: #2E9CCA;
@@ -646,13 +646,13 @@ nav {
   background-image: url("/img/computer-cplus.jpg"); }
 
 .course-info.software .image {
-  background-image: url("/img/software-interview.png"); }
-
-.course-info.hardware .image {
-  background-image: url("/img/hardware-interview.png"); }
+  background-image: url("/img/software-interview.jpg"); }
 
 .course-info.analytics .image {
   background-image: url("/img/analytics.jpg"); }
+
+.course-info.hardware .image {
+  background-image: url("/img/hardware-interview.png"); }
 
 #signUpModal .message {
   font-size: 25px;
@@ -756,9 +756,12 @@ section.offer {
       font-weight: bold; }
     .offer .inner .image {
       padding: 0; }
-    .offer .inner .promise {
+    .offer .inner .small-text {
       font-size: 12px;
       color: #777; }
+    .offer .inner .small-text.check-email {
+      display: none;
+      color: red; }
     .offer .inner .content {
       padding: 4px 0 15px; }
       .offer .inner .content ul {
