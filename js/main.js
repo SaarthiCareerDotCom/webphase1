@@ -8,7 +8,7 @@ $(document).ready(function () {
 	// });
 
 	$('.sliders').slick({
-		autoplay: false,
+		autoplay: true,
 		arrows: true,
 		dots: true,
 		autoplaySpeed: 8000
@@ -200,7 +200,7 @@ var showPromotionPopup = (function () {
 
 	var open = false;
 
-	if($('#freePdf').length === 0 || !!localStorage.viewModal) {
+	if($('#freePdf').length === 0 || !!localStorage.saarthiDemoClassSignupViewModal) {
 		var a = function () {};
         return a;
     }
@@ -208,7 +208,7 @@ var showPromotionPopup = (function () {
 	function openModal() {
 		if (!open) {
 			open = true;
-			localStorage.setItem('viewModal', true);
+			localStorage.setItem('saarthiDemoClassSignupViewModal', true);
 			var formPopup = new Foundation.Reveal($('#freePdf'));
 			formPopup.open();
 		}
