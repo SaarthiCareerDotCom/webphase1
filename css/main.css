@@ -1703,11 +1703,32 @@ section.offer .step-1 input {
 
 .main-banner {
   background-image: url(/img/main-banner.jpg);
-  background-size: cover;
-  width: 100%;
+  background-size: contain;
   height: 400px;
-  margin: 0px;
   position: relative;
+  background-position: 100%;
+}
+
+.main-banner-container {
+  position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 77%;
+    height: 100%;
+    transform: skewX(-30deg);
+    margin-left: -140px;
+    /* background: linear-gradient(to right, #48cfad 5%, #3bafda 90%); */
+    background-color: #fff;
+}
+
+.main-banner-container-shield {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 77%;
+  background-color: rgba(238, 238, 238, 0.5);
+  transform: skewX(-30deg);
+  margin-left: -140px;
 }
 
 .center-align-content {
